@@ -14,6 +14,12 @@ struct HomeView: View {
     }
 }
 
+// To see the preview in Landscape at this in the previews(requires Xcode 13 beta)
+//
+// ContentView()
+//.previewInterfaceOrientation(.landscapeLeft)
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {

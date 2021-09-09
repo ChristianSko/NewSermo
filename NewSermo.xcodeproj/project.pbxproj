@@ -53,7 +53,11 @@
 			isa = PBXGroup;
 			children = (
 				D6603C9A26EA60DB005AB1E5 /* NewSermoApp.swift */,
-				D6603C9C26EA60DB005AB1E5 /* HomeView.swift */,
+				D6603CAD26EA66C1005AB1E5 /* Components */,
+				D6603CAC26EA66BC005AB1E5 /* Views */,
+				D6603CAB26EA66B3005AB1E5 /* Managers */,
+				D6603CAA26EA6696005AB1E5 /* Utilities */,
+				D6603CA926EA667A005AB1E5 /* Screens */,
 				D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */,
 				D6603CA326EA60DC005AB1E5 /* Info.plist */,
 				D6603CA026EA60DC005AB1E5 /* Preview Content */,
@@ -67,6 +71,42 @@
 				D6603CA126EA60DC005AB1E5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6603CA926EA667A005AB1E5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D6603C9C26EA60DB005AB1E5 /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D6603CAA26EA6696005AB1E5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D6603CAB26EA66B3005AB1E5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D6603CAC26EA66BC005AB1E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6603CAD26EA66C1005AB1E5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

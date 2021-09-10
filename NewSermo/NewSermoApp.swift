@@ -11,7 +11,7 @@ import SwiftUI
 struct NewSermoApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            Home()
         }
     }
 }

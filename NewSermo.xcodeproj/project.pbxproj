@@ -11,6 +11,8 @@
 		D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603C9C26EA60DB005AB1E5 /* HomeView.swift */; };
 		D6603C9F26EA60DC005AB1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */; };
 		D6603CA226EA60DC005AB1E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6603CA126EA60DC005AB1E5 /* Preview Assets.xcassets */; };
+		D6603CB026EB4D07005AB1E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603CAF26EB4D07005AB1E5 /* Constants.swift */; };
+		D6603CB226EB505C005AB1E5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603CB126EB505C005AB1E5 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6603CA126EA60DC005AB1E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6603CA326EA60DC005AB1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6603CAF26EB4D07005AB1E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D6603CB126EB505C005AB1E5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		D6603CAA26EA6696005AB1E5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D6603CAE26EB4CDF005AB1E5 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 		D6603CAC26EA66BC005AB1E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6603CB126EB505C005AB1E5 /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +113,14 @@
 			children = (
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D6603CAE26EB4CDF005AB1E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6603CAF26EB4D07005AB1E5 /* Constants.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,8 @@
 			files = (
 				D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */,
 				D6603C9B26EA60DB005AB1E5 /* NewSermoApp.swift in Sources */,
+				D6603CB226EB505C005AB1E5 /* BackgroundView.swift in Sources */,
+				D6603CB026EB4D07005AB1E5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

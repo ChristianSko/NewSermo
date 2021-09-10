@@ -9,15 +9,13 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            BackgroundView(imageName: ImageAsset.homeBackground)
+            }
     }
 }
 
-// To see the preview in Landscape at this in the previews(requires Xcode 13 beta)
-//
-// ContentView()
-//.previewInterfaceOrientation(.landscapeLeft)
+
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -27,3 +25,8 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
+
+// To see the preview in Landscape at this in the previews(requires Xcode 13 beta)
+//
+// HomeView()
+//.previewInterfaceOrientation(.landscapeLeft)

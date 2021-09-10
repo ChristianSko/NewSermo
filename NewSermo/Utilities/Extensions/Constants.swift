@@ -8,5 +8,9 @@
 import Foundation
 
 enum ImageAsset {
-    static let homeBackground = "background-menu"
+    static let menuBackground = "background-menu"
+    
+    static let categoryParkIcon = "category-park"
+    static let categoryMarketIcon = "category-market"
+    static let categoryHomeIcon = "category-home"
 }

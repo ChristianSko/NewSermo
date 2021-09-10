@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct NewSermoApp: App {
+struct SermoAvenue: App {
     var body: some Scene {
         WindowGroup {
             Home()

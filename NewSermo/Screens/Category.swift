@@ -12,7 +12,7 @@ struct Category: View {
     var body: some View {
         ZStack {
             BackgroundView(imageName: ImageAsset.backgroundMarket)
-            
+    
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){
                     ForEach(0..<10) { cell in
@@ -52,6 +52,7 @@ struct CellView: View {
                 .aspectRatio(contentMode: .fit)
                 .border(Color.blue, width: borderWidth)
                 .cornerRadius(cornerRadius)
+                .shadow(radius: 3)
             
         }
     }

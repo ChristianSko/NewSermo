@@ -15,6 +15,6 @@ enum ImageAsset {
     static let categoryHomeIcon   = "category-home"
     
     static let backgroundMarket   = "background-market"
-    static let backgroundPark     = "background-market"
-    static let backgroundHome     = "background-market"
+    static let backgroundPark     = "background-park"
+    static let backgroundHome     = "background-home"
 }

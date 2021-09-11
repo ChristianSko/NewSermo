@@ -9,9 +9,11 @@ import SwiftUI
 
 struct Category: View {
     
+    let backgroundImage: String
+    
     var body: some View {
         ZStack {
-            BackgroundView(imageName: ImageAsset.backgroundMarket)
+            BackgroundView(imageName: backgroundImage)
     
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){
@@ -23,6 +25,7 @@ struct Category: View {
                                  borderWidth: 5)
                     }
                 }
+                .offset(y: -25)
             }
         }
     }
@@ -30,7 +33,7 @@ struct Category: View {
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        Category()
+        Category(backgroundImage: ImageAsset.backgroundMarket)
     }
 }
 

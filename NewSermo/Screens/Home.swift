@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Home: View {
+    
     var body: some View {
         
     NavigationView {
@@ -16,17 +17,17 @@ struct Home: View {
                 
                 HStack{
 
-                    NavigationLink(destination: Category()) {
+                    NavigationLink(destination: Category(backgroundImage: ImageAsset.backgroundMarket)) {
                         CategoryButton(imageName: ImageAsset.categoryMarketIcon)
                             .offset(y: 20)
                     }
 
-                    NavigationLink(destination: Category()) {
+                    NavigationLink(destination: Category(backgroundImage: ImageAsset.backgroundPark)) {
                         CategoryButton(imageName: ImageAsset.categoryParkIcon)
                             .offset(y: -30)
                     }
 
-                    NavigationLink(destination: Category()) {
+                    NavigationLink(destination: Category(backgroundImage: ImageAsset.backgroundHome)) {
                         CategoryButton(imageName: ImageAsset.categoryHomeIcon)
                             .offset(y: 20)
                     }

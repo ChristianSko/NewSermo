@@ -7,7 +7,21 @@
 
 import Foundation
 
+
+
+// MARK: - IMAGE ASSET STRINGS
 enum ImageAsset {
+    
+    
+    // Onboarding Assets
+    static let onboarding1 = "onboarding_1"
+    static let onboarding2 = "onboarding_2"
+    static let onboarding3 = "onboarding_3"
+    static let onboarding4 = "onboarding_4"
+    static let onboarding5 = "onboarding_5"
+    
+    
+    // App Background Assets
     static let menuBackground = "background-menu"
     
     static let categoryParkIcon   = "category-park"
@@ -17,4 +31,13 @@ enum ImageAsset {
     static let backgroundMarket   = "background-market"
     static let backgroundPark     = "background-park"
     static let backgroundHome     = "background-home"
+    
+}
+
+
+// MARK: -SF SYMBOLS STRINGS
+enum SFSymbols {
+    
+    static let arrowRight = "arrow.right.circle"
+   
 }

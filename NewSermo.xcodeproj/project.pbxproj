@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65A266226EE9C7200D11021 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266126EE9C7200D11021 /* Onboarding.swift */; };
+		D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */; };
+		D65A266726EE9EE500D11021 /* FinalOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */; };
+		D65A266926EE9EFB00D11021 /* GenericOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266826EE9EFB00D11021 /* GenericOnboardingView.swift */; };
+		D65A266B26EEA52800D11021 /* CircleArrowRightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */; };
 		D6603C9B26EA60DB005AB1E5 /* SermoAvenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603C9A26EA60DB005AB1E5 /* SermoAvenue.swift */; };
 		D6603C9D26EA60DB005AB1E5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603C9C26EA60DB005AB1E5 /* Home.swift */; };
 		D6603C9F26EA60DC005AB1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D65A266126EE9C7200D11021 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOnboardingView.swift; sourceTree = "<group>"; };
+		D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingView.swift; sourceTree = "<group>"; };
+		D65A266826EE9EFB00D11021 /* GenericOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericOnboardingView.swift; sourceTree = "<group>"; };
+		D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleArrowRightButton.swift; sourceTree = "<group>"; };
 		D6603C9726EA60DB005AB1E5 /* NewSermo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewSermo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6603C9A26EA60DB005AB1E5 /* SermoAvenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SermoAvenue.swift; sourceTree = "<group>"; };
 		D6603C9C26EA60DB005AB1E5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -41,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D65A266326EE9E7800D11021 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D65A266126EE9C7200D11021 /* Onboarding.swift */,
+				D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */,
+				D65A266826EE9EFB00D11021 /* GenericOnboardingView.swift */,
+				D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		D6603C8E26EA60DB005AB1E5 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +107,7 @@
 			children = (
 				D6603C9C26EA60DB005AB1E5 /* Home.swift */,
 				D6603CB326EB65FE005AB1E5 /* Category.swift */,
+				D65A266326EE9E7800D11021 /* Onboarding */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -116,6 +138,7 @@
 		D6603CAD26EA66C1005AB1E5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -199,11 +222,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6603C9D26EA60DB005AB1E5 /* Home.swift in Sources */,
+				D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */,
 				D6603C9B26EA60DB005AB1E5 /* SermoAvenue.swift in Sources */,
+				D65A266726EE9EE500D11021 /* FinalOnboardingView.swift in Sources */,
 				D6603CB226EB505C005AB1E5 /* BackgroundView.swift in Sources */,
+				D65A266226EE9C7200D11021 /* Onboarding.swift in Sources */,
+				D65A266926EE9EFB00D11021 /* GenericOnboardingView.swift in Sources */,
 				D6603CB026EB4D07005AB1E5 /* Ext+Constants.swift in Sources */,
 				D6603CB426EB65FE005AB1E5 /* Category.swift in Sources */,
 				D695FFAE26ED602B005BCBD7 /* Ext+Navigationbar.swift in Sources */,
+				D65A266B26EEA52800D11021 /* CircleArrowRightButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

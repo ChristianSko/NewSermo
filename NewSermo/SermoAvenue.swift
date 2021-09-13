@@ -11,7 +11,7 @@ import SwiftUI
 struct SermoAvenue: App {
     var body: some Scene {
         WindowGroup {
-            Onboarding()
+            Home()
         }
     }
 }

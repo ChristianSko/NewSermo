@@ -12,7 +12,7 @@ struct Category: View {
     let backgroundImage: String
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .center) {
             BackgroundView(imageName: backgroundImage)
     
             ScrollView(.horizontal, showsIndicators: false) {
@@ -25,7 +25,7 @@ struct Category: View {
                                  borderWidth: 5)
                     }
                 }
-                .offset(y: -25)
+                .offset(y: -35)
             }
         }
     }

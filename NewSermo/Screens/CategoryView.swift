@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Category: View {
+struct CategoryView: View {
     
     let backgroundImage: String
     
@@ -18,11 +18,13 @@ struct Category: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){
                     ForEach(0..<10) { cell in
-                        CellView(imageName: "apple",
-                                 color: Color.blue,
-                                 cellSize: 200,
-                                 cornerRadius: 10,
-                                 borderWidth: 5)
+                        NavigationLink(destination: FlashcardView()) {
+                            CellView(imageName: "apple",
+                                     color: Color.blue,
+                                     cellSize: 200,
+                                     cornerRadius: 10,
+                                     borderWidth: 5)
+                        }
                     }
                 }
                 .offset(y: -35)
@@ -33,7 +35,7 @@ struct Category: View {
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        Category(backgroundImage: ImageAsset.backgroundMarket)
+        CategoryView(backgroundImage: ImageAsset.backgroundMarket)
     }
 }
 

@@ -33,7 +33,7 @@ enum ImageAsset {
     static let backgroundHome     = "background-home"
     
     
-    // Buttons
+    // Buttons Assets
     static let skipButton = "skip"
     static let playButton = "play"
     

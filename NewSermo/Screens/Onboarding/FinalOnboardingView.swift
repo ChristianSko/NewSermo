@@ -17,10 +17,9 @@ struct FinalOnboardingView: View {
             BackgroundView(imageName: imageName)
             
             Button(action: {
-                print("Move next screen goes here")
-
+                print("Dismiss screen goes here")
             }, label: {
-                Image("play")
+                Image(ImageAsset.playButton)
                     .offset(x: -80)
                     .padding(20)
                     .shadow(color: .black, radius: 4, x: 2, y: 2)

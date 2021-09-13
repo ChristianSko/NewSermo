@@ -16,14 +16,12 @@ struct InitialOnboardingView: View {
             BackgroundView(imageName: imageName)
             
             
-            
-            
             VStack {
                 Button(action: {
-                    print("Move next screen goes here")
+                    print("Dismiss screen goes here")
 
                 }, label: {
-                    Image("skip")
+                    Image(ImageAsset.skipButton)
                         .offset(x: -80)
                         .padding(20)
                 })

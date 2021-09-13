@@ -9,11 +9,38 @@ import SwiftUI
 
 struct InitialOnboardingView: View {
     
-    let imagName: String
+    let imageName: String
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            BackgroundView(imageName: imagName)
+        ZStack(alignment: .trailing) {
+            BackgroundView(imageName: imageName)
+            
+            
+            
+            
+            VStack {
+                Button(action: {
+                    print("Move next screen goes here")
+
+                }, label: {
+                    Image("skip")
+                        .offset(x: -80)
+                        .padding(20)
+                })
+                
+                
+                Spacer()
+                
+                
+                Button(action: {
+                    print("Move next screen goes here")
+
+                }, label: {
+                    CircleArrowRightButton(color: .white, size: 44)
+                        .offset(x: -80)
+                        .padding(20)
+            })
+            }
             
         }
     }
@@ -21,6 +48,6 @@ struct InitialOnboardingView: View {
 
 struct InitialView_Previews: PreviewProvider {
     static var previews: some View {
-        InitialOnboardingView(imagName: ImageAsset.onboarding1)
+        InitialOnboardingView(imageName: ImageAsset.onboarding1)
     }
 }

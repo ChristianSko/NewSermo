@@ -12,7 +12,20 @@ struct FinalOnboardingView: View {
     let imageName: String
     
     var body: some View {
-        BackgroundView(imageName: imageName)
+        
+        ZStack(alignment: .bottomTrailing){
+            BackgroundView(imageName: imageName)
+            
+            Button(action: {
+                print("Move next screen goes here")
+
+            }, label: {
+                Image("play")
+                    .offset(x: -80)
+                    .padding(20)
+                    .shadow(color: .black, radius: 4, x: 2, y: 2)
+            })
+        }
     }
 }
 

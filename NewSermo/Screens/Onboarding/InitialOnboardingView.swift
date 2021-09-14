@@ -39,7 +39,6 @@ struct InitialOnboardingView: View {
                         .padding(20)
             })
             }
-            
         }
     }
 }

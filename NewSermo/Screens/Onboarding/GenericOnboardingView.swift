@@ -12,17 +12,31 @@ struct GenericOnboardingView: View {
     let imageName: String
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing){
-            BackgroundView(imageName: imageName)
-            
-            Button(action: {
-                print("Move next screen goes here")
+        ZStack{
+            ZStack(alignment: .bottomTrailing){
+                BackgroundView(imageName: imageName)
+                
+                Button(action: {
+                    print("Banana sound goes here")
 
-            }, label: {
-                CircleArrowRightButton(color: .white, size: 44)
-                    .offset(x: -50)
-                    .padding(20)
-            })
+                }, label: {
+                    CircleArrowRightButton(color: .white, size: 44)
+                        .offset(x: -50)
+                        .padding(20)
+                })
+            }
+            
+            if imageName == ImageAsset.onboarding4{
+                Button(action: {
+                    print("Move next screen goes here")
+
+                }, label: {
+                    Image("banana-button")
+                        .padding(20)
+
+                })
+                .offset(x: 140, y: -40)
+            }
         }
     }
 }

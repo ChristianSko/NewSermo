@@ -7,10 +7,7 @@
 
 import SwiftUI
 
-
-
 struct Onboarding: View {
-    let colors: [Color] = [.red, .green, .blue]
 
     var body: some View {
         ScrollView {
@@ -21,12 +18,9 @@ struct Onboarding: View {
                 GenericOnboardingView(imageName: ImageAsset.onboarding4)
                 FinalOnboardingView(imageName: ImageAsset.onboarding5)
             }
-            .frame(
-                width: UIScreen.main.bounds.width ,
-                height: UIScreen.main.bounds.height
-            )
+            .frame(width: UIScreen.main.bounds.width ,
+                   height: UIScreen.main.bounds.height)
             .tabViewStyle(PageTabViewStyle())
-            
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -35,22 +29,6 @@ struct Onboarding: View {
 
 //There is a bug on Apple's side for for showing tabview that ignore edges -> https://stackoverflow.com/questions/62593923/edgesignoringsafearea-on-tabview-with-pagetabviewstyle-not-working
 // Using above implementation until it's fixed.
-
-//struct Onboarding: View {
-//    var body: some View {
-//
-//            TabView {
-//                InitialOnboardingView(imageName: ImageAsset.onboarding1)
-//                GenericOnboardingView(imageName: ImageAsset.onboarding2)
-//                GenericOnboardingView(imageName: ImageAsset.onboarding3)
-//                GenericOnboardingView(imageName: ImageAsset.onboarding4)
-//                FinalOnboardingView(imageName: ImageAsset.onboarding5)
-//            }
-//            .tabViewStyle(PageTabViewStyle())
-//            .ignoresSafeArea(.all, edges: .all)
-//
-//    }
-//}
 
 
 //struct Onboarding: View {

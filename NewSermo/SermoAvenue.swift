@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct SermoAvenue: App {
     
+    // TODO: - Set Up with UserDefaults once app is finished
     @State var userPassedOnboarding = false
     
     var body: some Scene {

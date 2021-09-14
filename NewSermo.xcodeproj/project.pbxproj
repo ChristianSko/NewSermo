@@ -16,10 +16,10 @@
 		D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603C9C26EA60DB005AB1E5 /* HomeView.swift */; };
 		D6603C9F26EA60DC005AB1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */; };
 		D6603CA226EA60DC005AB1E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6603CA126EA60DC005AB1E5 /* Preview Assets.xcassets */; };
-		D6603CB026EB4D07005AB1E5 /* Ext+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603CAF26EB4D07005AB1E5 /* Ext+Constants.swift */; };
+		D6603CB026EB4D07005AB1E5 /* Constants+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603CAF26EB4D07005AB1E5 /* Constants+Ext.swift */; };
 		D6603CB226EB505C005AB1E5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603CB126EB505C005AB1E5 /* BackgroundView.swift */; };
 		D6603CB426EB65FE005AB1E5 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603CB326EB65FE005AB1E5 /* CategoryView.swift */; };
-		D695FFAE26ED602B005BCBD7 /* Ext+Navigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695FFAD26ED602B005BCBD7 /* Ext+Navigationbar.swift */; };
+		D695FFAE26ED602B005BCBD7 /* Navigationbar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */; };
 		D6E176E926EF967B00B87BE1 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176E826EF967B00B87BE1 /* FlashcardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +35,10 @@
 		D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6603CA126EA60DC005AB1E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6603CA326EA60DC005AB1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6603CAF26EB4D07005AB1E5 /* Ext+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Constants.swift"; sourceTree = "<group>"; };
+		D6603CAF26EB4D07005AB1E5 /* Constants+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Ext.swift"; sourceTree = "<group>"; };
 		D6603CB126EB505C005AB1E5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		D6603CB326EB65FE005AB1E5 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
-		D695FFAD26ED602B005BCBD7 /* Ext+Navigationbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Navigationbar.swift"; sourceTree = "<group>"; };
+		D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigationbar+Ext.swift"; sourceTree = "<group>"; };
 		D6E176E826EF967B00B87BE1 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,8 +149,8 @@
 		D6603CAE26EB4CDF005AB1E5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D6603CAF26EB4D07005AB1E5 /* Ext+Constants.swift */,
-				D695FFAD26ED602B005BCBD7 /* Ext+Navigationbar.swift */,
+				D6603CAF26EB4D07005AB1E5 /* Constants+Ext.swift */,
+				D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,9 +232,9 @@
 				D6E176E926EF967B00B87BE1 /* FlashcardView.swift in Sources */,
 				D65A266226EE9C7200D11021 /* Onboarding.swift in Sources */,
 				D65A266926EE9EFB00D11021 /* GenericOnboardingView.swift in Sources */,
-				D6603CB026EB4D07005AB1E5 /* Ext+Constants.swift in Sources */,
+				D6603CB026EB4D07005AB1E5 /* Constants+Ext.swift in Sources */,
 				D6603CB426EB65FE005AB1E5 /* CategoryView.swift in Sources */,
-				D695FFAE26ED602B005BCBD7 /* Ext+Navigationbar.swift in Sources */,
+				D695FFAE26ED602B005BCBD7 /* Navigationbar+Ext.swift in Sources */,
 				D65A266B26EEA52800D11021 /* CircleArrowRightButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

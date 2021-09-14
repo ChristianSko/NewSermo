@@ -10,6 +10,7 @@ import SwiftUI
 struct FinalOnboardingView: View {
     
     let imageName: String
+    @Binding var onBoardingState: Bool
     
     var body: some View {
         ZStack{
@@ -17,7 +18,7 @@ struct FinalOnboardingView: View {
                 BackgroundView(imageName: imageName)
                 
                 Button(action: {
-                    print("Dismiss screen goes here")
+                    onBoardingState.toggle()
                 }, label: {
                     Image(ImageAsset.playButton)
                         .offset(x: -50)
@@ -45,7 +46,10 @@ struct FinalOnboardingView: View {
 }
 
 struct FinalView_Previews: PreviewProvider {
+    @State static var userPassedOnboarding = false
+    
     static var previews: some View {
-        FinalOnboardingView(imageName: ImageAsset.onboarding5)
+        FinalOnboardingView(imageName: ImageAsset.onboarding5,
+                            onBoardingState: $userPassedOnboarding)
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Onboarding: View {
+    
+    @Binding var userPassedOnboarding: Bool
 
     var body: some View {
         ScrollView {
@@ -16,7 +18,8 @@ struct Onboarding: View {
                 GenericOnboardingView(imageName: ImageAsset.onboarding2)
                 GenericOnboardingView(imageName: ImageAsset.onboarding3)
                 GenericOnboardingView(imageName: ImageAsset.onboarding4)
-                FinalOnboardingView(imageName: ImageAsset.onboarding5)
+                FinalOnboardingView(imageName: ImageAsset.onboarding5,
+                                    onBoardingState: $userPassedOnboarding)
             }
             .frame(width: UIScreen.main.bounds.width ,
                    height: UIScreen.main.bounds.height)
@@ -48,9 +51,12 @@ struct Onboarding: View {
 //}
 
 struct Onboarding_Previews: PreviewProvider {
+    
+    @State static var userPassedOnboarding = false
+    
     static var previews: some View {
         Group {
-            Onboarding()
+            Onboarding(userPassedOnboarding: $userPassedOnboarding)
                 .preferredColorScheme(.dark)
         }
     }

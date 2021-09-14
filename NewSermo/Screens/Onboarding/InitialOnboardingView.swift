@@ -15,7 +15,7 @@ struct InitialOnboardingView: View {
         ZStack(alignment: .trailing) {
             BackgroundView(imageName: imageName)
             
-            
+
             VStack {
                 Button(action: {
                     print("Dismiss screen goes here")

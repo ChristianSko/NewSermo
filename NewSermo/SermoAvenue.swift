@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct SermoAvenue: App {
+    
+    @State var userPassedOnboarding = false
+    
     var body: some Scene {
         WindowGroup {
-            Onboarding()
+            if userPassedOnboarding{
+                HomeView()
+            } else {
+                Onboarding(userPassedOnboarding: $userPassedOnboarding)
+            }
         }
     }
 }

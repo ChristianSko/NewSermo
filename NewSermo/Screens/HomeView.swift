@@ -14,6 +14,7 @@ struct HomeView: View {
     NavigationView {
         ZStack {
                 BackgroundView(imageName: ImageAsset.menuBackground)
+                    .ignoresSafeArea()
                 
                 HStack{
 

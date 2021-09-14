@@ -14,7 +14,6 @@ struct BackgroundView: View {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .edgesIgnoringSafeArea(.all)
     }
 }
 

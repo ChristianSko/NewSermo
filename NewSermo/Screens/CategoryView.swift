@@ -14,6 +14,7 @@ struct CategoryView: View {
     var body: some View {
         ZStack(alignment: .center) {
             BackgroundView(imageName: backgroundImage)
+                .ignoresSafeArea(.all, edges: .all)
     
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){

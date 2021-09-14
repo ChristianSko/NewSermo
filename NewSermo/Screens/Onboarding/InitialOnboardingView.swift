@@ -22,7 +22,7 @@ struct InitialOnboardingView: View {
 
                 }, label: {
                     Image(ImageAsset.skipButton)
-                        .offset(x: -80)
+                        .offset(x: -50)
                         .padding(20)
                 })
                 
@@ -35,7 +35,7 @@ struct InitialOnboardingView: View {
 
                 }, label: {
                     CircleArrowRightButton(color: .white, size: 44)
-                        .offset(x: -80)
+                        .offset(x: -50)
                         .padding(20)
             })
             }

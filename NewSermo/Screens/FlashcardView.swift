@@ -9,32 +9,41 @@ import SwiftUI
 
 struct FlashcardView: View {
     var body: some View {
-        HStack{
-            Image("apple")
-                .resizable()
-                .frame(width: 300, height: 300)
-                .aspectRatio(contentMode: .fit)
-                .border(Color.red, width: 4)
-                
-            
-            Spacer()
-                .frame(width: 150)
-            
-            VStack(spacing: 80){
-                Text("Spoon")
-                
-                
-                HStack{
-                    Text("PuzzleButton")
+        
+        ZStack{
+            BackgroundView(imageName: "backgroundmixflashcard-park")
+                .edgesIgnoringSafeArea(.all)
+        
+            HStack{
+                Image("apple")
+                    .resizable()
+                    .frame(width: 300, height: 300)
+                    .aspectRatio(contentMode: .fit)
+                    .border(Color.red, width: 12)
                     
-                    Spacer()
+                
+                Spacer()
+                    .frame(width: 150)
+                
+                VStack(spacing: 80){
+                    Text("Spoon")
                     
-                    Text("FindGameButton")
+                    
+                    HStack{
+                        Text("PuzzleButton")
+                        
+                        Spacer()
+                        
+                        Text("FindGameButton")
+                    }
                 }
+                
+                .offset(x: -50)
             }
-            .offset(x: -50)
+            .background(Color(.white))
+            .border(Color.red, width: 12)
         }
-        .border(Color.red, width: 4)
+        
     }
 }
 

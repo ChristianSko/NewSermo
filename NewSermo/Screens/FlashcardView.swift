@@ -33,7 +33,7 @@ struct FlashcardView: View {
                         print("Haptic Feedback on here")
                     }
                         
-                    HStack(spacing: 50){
+                    HStack(spacing: 70){
                         
                         RoundedButton(sfSymbol: SFSymbols.photos,
                                       color: color){

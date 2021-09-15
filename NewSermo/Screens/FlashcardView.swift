@@ -22,6 +22,7 @@ struct FlashcardView: View {
                     .frame(width: 300, height: 300)
                     .aspectRatio(contentMode: .fit)
                     .border(color, width: 12)
+                    .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
                 
                 Spacer()
                     .frame(width: 150)
@@ -51,6 +52,7 @@ struct FlashcardView: View {
             .background(Color(.white))
             .border(color, width: 12)
             .cornerRadius(10)
+            .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
         }
         
     }
@@ -78,7 +80,7 @@ struct WordButton: View {
                 .foregroundColor(.white)
                 .background(color)
                 .clipShape(Capsule())
-                .shadow(color: .black, radius: 2, x: 2, y: 2)
+                .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
         }
     }
 }
@@ -100,7 +102,7 @@ struct RoundedButton: View {
                        height: 82)
                 .background(color)
                 .clipShape(Circle())
-                .shadow(color: .black, radius: 2, x: 2, y: 2)
+                .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
         }
     }
 }

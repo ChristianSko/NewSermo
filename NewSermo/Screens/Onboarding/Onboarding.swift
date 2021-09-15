@@ -14,7 +14,7 @@ struct Onboarding: View {
     var body: some View {
         ScrollView {
             TabView {
-                InitialOnboardingView(imageName: ImageAsset.onboarding1)
+                InitialOnboardingView(imageName: ImageAsset.onboarding1, onBoardingState: $userPassedOnboarding)
                 GenericOnboardingView(imageName: ImageAsset.onboarding2)
                 GenericOnboardingView(imageName: ImageAsset.onboarding3)
                 GenericOnboardingView(imageName: ImageAsset.onboarding4)

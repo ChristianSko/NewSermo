@@ -9,7 +9,32 @@ import SwiftUI
 
 struct FlashcardView: View {
     var body: some View {
-        Text("Flashcard goes here")
+        HStack{
+            Image("apple")
+                .resizable()
+                .frame(width: 300, height: 300)
+                .aspectRatio(contentMode: .fit)
+                .border(Color.red, width: 4)
+                
+            
+            Spacer()
+                .frame(width: 150)
+            
+            VStack(spacing: 80){
+                Text("Spoon")
+                
+                
+                HStack{
+                    Text("PuzzleButton")
+                    
+                    Spacer()
+                    
+                    Text("FindGameButton")
+                }
+            }
+            .offset(x: -50)
+        }
+        .border(Color.red, width: 4)
     }
 }
 

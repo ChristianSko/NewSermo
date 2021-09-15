@@ -19,7 +19,7 @@ struct CategoryView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){
                     ForEach(0..<10) { cell in
-                        NavigationLink(destination: FlashcardView()) {
+                        NavigationLink(destination: FlashcardView(color: .blue)) {
                             CellView(imageName: "apple",
                                      color: Color.blue,
                                      cellSize: 200,
@@ -28,7 +28,7 @@ struct CategoryView: View {
                         }
                     }
                 }
-                .offset(y: -35)
+                .offset(y: -15)
             }
         }
     }

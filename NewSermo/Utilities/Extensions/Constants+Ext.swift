@@ -21,21 +21,29 @@ enum ImageAsset {
     static let onboarding5 = "onboarding_5"
     
     
+    
+    
+    
+   
     // App Background Assets
-    static let menuBackground = "background-menu"
     
-    static let categoryParkIcon   = "category-park"
-    static let categoryMarketIcon = "category-market"
-    static let categoryHomeIcon   = "category-home"
+    static let menuBackground               = "background-menu"
     
-    static let backgroundMarket   = "background-market"
-    static let backgroundPark     = "background-park"
-    static let backgroundHome     = "background-home"
+    static let backgroundMarket             = "background-market"
+    static let backgroundPark               = "background-park"
+    static let backgroundHome               = "background-home"
     
+    static let backgroundMarketFlashcard    = "backgroundmixflashcard-market"
+    static let backgroundflashCardPark      = "backgroundmixflashcard-park"
+    static let backgroundflashCardHome      = "backgroundmixflashcard-home"
     
     // Buttons Assets
-    static let skipButton = "skip"
-    static let playButton = "play"
+    static let categoryMarketIcon           = "category-market"
+    static let categoryParkIcon             = "category-park"
+    static let categoryHomeIcon             = "category-home"
+    
+    static let skipButton                   = "skip"
+    static let playButton                   = "play"
     
 }
 
@@ -44,5 +52,7 @@ enum ImageAsset {
 enum SFSymbols {
     
     static let arrowRight = "arrow.right.circle"
-   
+    static let photos = "photo.on.rectangle"
+    static let puzzle = "puzzlepiece"
+    
 }

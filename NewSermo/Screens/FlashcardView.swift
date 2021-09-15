@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct FlashcardView: View {
+    
+    let color: Color
+    
     var body: some View {
-        
         ZStack{
-            BackgroundView(imageName: "backgroundmixflashcard-park")
+            BackgroundView(imageName: ImageAsset.backgroundMarketFlashcard)
                 .edgesIgnoringSafeArea(.all)
         
             HStack{
@@ -19,49 +21,36 @@ struct FlashcardView: View {
                     .resizable()
                     .frame(width: 300, height: 300)
                     .aspectRatio(contentMode: .fit)
-                    .border(Color.red, width: 12)
-                    
+                    .border(color, width: 12)
                 
                 Spacer()
                     .frame(width: 150)
                 
                 VStack(alignment: .center, spacing: 50){
-                    Text("Spoon")
-                        .font(.title)
-                        .frame(width: 240, height: 50)
-                        .foregroundColor(.white)
-                        .background(Color.red)
-                        .clipShape(Capsule())
+        
+                    WordButton(word: "Apple",
+                               color: color) {
+                        print("Haptic Feedback on here")
+                    }
                         
-                        
-                        
-                    
-                    
                     HStack(spacing: 50){
-                        Image(systemName: "photo.on.rectangle")
-                            .font(.title)
-                            .foregroundColor(.white)
-                            .frame(width: 82,
-                                   height: 82)
-                            .background(Color.red)
-                            .clipShape(Circle())
                         
-                    
-                        
-                        Image(systemName: "puzzlepiece")
-                            .font(.title)
-                            .foregroundColor(.white)
-                            .frame(width: 82,
-                                   height: 82)
-                            .background(Color.red)
-                            .clipShape(Circle())
+                        RoundedButton(sfSymbol: SFSymbols.photos,
+                                      color: color){
+                         print("Navigation here")
+                        }
+
+                        RoundedButton(sfSymbol: SFSymbols.puzzle,
+                                      color: color){
+                        print("Navigation here")
+                       }
                     }
                 }
-                
                 .offset(x: -80)
             }
             .background(Color(.white))
-            .border(Color.red, width: 12)
+            .border(color, width: 12)
+            .cornerRadius(10)
         }
         
     }
@@ -69,6 +58,49 @@ struct FlashcardView: View {
 
 struct Fashcard_Previews: PreviewProvider {
     static var previews: some View {
-        FlashcardView()
+        FlashcardView(color: .blue)
+    }
+}
+
+
+struct WordButton: View {
+    
+    let word: String
+    let color: Color
+    let action: (() -> Void)
+    
+    var body: some View {
+        
+        Button(action: action) {
+            Text(word)
+                .font(.title)
+                .frame(width: 240, height: 50)
+                .foregroundColor(.white)
+                .background(color)
+                .clipShape(Capsule())
+                .shadow(color: .black, radius: 2, x: 2, y: 2)
+        }
+    }
+}
+
+
+struct RoundedButton: View {
+    
+    let sfSymbol: String
+    let color: Color
+    let action: (() -> Void)
+    
+    var body: some View {
+        
+        Button(action: action) {
+            Image(systemName: sfSymbol)
+                .font(.title)
+                .foregroundColor(.white)
+                .frame(width: 82,
+                       height: 82)
+                .background(color)
+                .clipShape(Circle())
+                .shadow(color: .black, radius: 2, x: 2, y: 2)
+        }
     }
 }

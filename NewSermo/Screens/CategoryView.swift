@@ -24,7 +24,7 @@ struct CategoryView: View {
                                      color: Color.blue,
                                      cellSize: 200,
                                      cornerRadius: 10,
-                                     borderWidth: 5)
+                                     borderWidth: 10)
                         }
                     }
                 }
@@ -58,7 +58,7 @@ struct CellView: View {
                 .aspectRatio(contentMode: .fit)
                 .border(Color.blue, width: borderWidth)
                 .cornerRadius(cornerRadius)
-                .shadow(radius: 3)
+                .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
             
         }
     }

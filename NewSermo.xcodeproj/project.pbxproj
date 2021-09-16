@@ -21,6 +21,8 @@
 		D6603CB426EB65FE005AB1E5 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603CB326EB65FE005AB1E5 /* CategoryView.swift */; };
 		D695FFAE26ED602B005BCBD7 /* Navigationbar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */; };
 		D6E176E926EF967B00B87BE1 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176E826EF967B00B87BE1 /* FlashcardView.swift */; };
+		D6E176F026F3E79C00B87BE1 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176EF26F3E79C00B87BE1 /* PuzzleView.swift */; };
+		D6E176F226F3E7BE00B87BE1 /* FindAndMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176F126F3E7BE00B87BE1 /* FindAndMatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		D6603CB326EB65FE005AB1E5 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigationbar+Ext.swift"; sourceTree = "<group>"; };
 		D6E176E826EF967B00B87BE1 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		D6E176EF26F3E79C00B87BE1 /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		D6E176F126F3E7BE00B87BE1 /* FindAndMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAndMatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				D6603C9C26EA60DB005AB1E5 /* HomeView.swift */,
 				D6603CB326EB65FE005AB1E5 /* CategoryView.swift */,
 				D6E176E826EF967B00B87BE1 /* FlashcardView.swift */,
+				D6E176EF26F3E79C00B87BE1 /* PuzzleView.swift */,
+				D6E176F126F3E7BE00B87BE1 /* FindAndMatchView.swift */,
 				D65A266326EE9E7800D11021 /* Onboarding */,
 			);
 			path = Screens;
@@ -232,8 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E176F026F3E79C00B87BE1 /* PuzzleView.swift in Sources */,
 				D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */,
 				D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */,
+				D6E176F226F3E7BE00B87BE1 /* FindAndMatchView.swift in Sources */,
 				D6603C9B26EA60DB005AB1E5 /* SermoAvenue.swift in Sources */,
 				D65A266726EE9EE500D11021 /* FinalOnboardingView.swift in Sources */,
 				D6603CB226EB505C005AB1E5 /* BackgroundView.swift in Sources */,

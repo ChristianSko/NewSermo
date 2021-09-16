@@ -36,15 +36,15 @@ struct FlashcardView: View {
                         
                     HStack(spacing: 70){
                         
-                        RoundedButton(sfSymbol: SFSymbols.photos,
-                                      color: color){
-                         print("Navigation here")
+                        NavigationLink(destination: FindAndMatchView()) {
+                            RoundedButton(sfSymbol: SFSymbols.photos,
+                                          color: color)
                         }
-
-                        RoundedButton(sfSymbol: SFSymbols.puzzle,
-                                      color: color){
-                        print("Navigation here")
-                       }
+                        
+                        NavigationLink(destination: FindAndMatchView()) {
+                            RoundedButton(sfSymbol: SFSymbols.puzzle,
+                                          color: color)
+                        }
                     }
                 }
                 .offset(x: -80)
@@ -90,19 +90,16 @@ struct RoundedButton: View {
     
     let sfSymbol: String
     let color: Color
-    let action: (() -> Void)
     
     var body: some View {
         
-        Button(action: action) {
-            Image(systemName: sfSymbol)
-                .font(.title)
-                .foregroundColor(.white)
-                .frame(width: 82,
-                       height: 82)
-                .background(color)
-                .clipShape(Circle())
-                .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-        }
+        Image(systemName: sfSymbol)
+            .font(.title)
+            .foregroundColor(.white)
+            .frame(width: 82,
+                   height: 82)
+            .background(color)
+            .clipShape(Circle())
+            .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
     }
 }

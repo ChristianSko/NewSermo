@@ -47,7 +47,7 @@ struct FlashcardView: View {
                                           color: color)
                         }
                         
-                        NavigationLink(destination: FindAndMatchView()) {
+                        NavigationLink(destination: PuzzleView()) {
                             RoundedButton(sfSymbol: SFSymbols.puzzle,
                                           color: color)
                         }

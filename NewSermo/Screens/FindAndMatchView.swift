@@ -23,12 +23,13 @@ struct FindAndMatchView: View {
                     .multilineTextAlignment(.center)
                     .padding()
                 
-                HStack(spacing: 34){
+                HStack(spacing: 28){
                     PictureCell()
                     PictureCell()
                     PictureCell()
                 }
             }
+            .offset(x: -20, y: -40)
         }
     }
 }
@@ -49,7 +50,7 @@ struct PictureCell: View {
                 .foregroundColor(.white)
                 .font(Font.title.weight(.semibold))
                 .frame(width: 96, height: 78, alignment: .center)
-                
+            
             Text("SHAPE")
                 .font(.title)
                 .fontWeight(.bold)

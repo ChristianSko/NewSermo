@@ -154,10 +154,7 @@
 		D6603CAD26EA66C1005AB1E5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */,
-				D6E176F726F62A7600B87BE1 /* XmarkButton.swift */,
-				D67E60EF26F62D7300A7AC40 /* InfoButton.swift */,
-				D67E60F126F6352B00A7AC40 /* RestartButton.swift */,
+				D67E60F426F6370400A7AC40 /* Buttons */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -169,6 +166,17 @@
 				D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D67E60F426F6370400A7AC40 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */,
+				D6E176F726F62A7600B87BE1 /* XmarkButton.swift */,
+				D67E60EF26F62D7300A7AC40 /* InfoButton.swift */,
+				D67E60F126F6352B00A7AC40 /* RestartButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		D6E176EE26F2211800B87BE1 /* Model */ = {

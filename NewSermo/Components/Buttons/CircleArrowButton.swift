@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircleArrowRightButton: View {
+struct CircleArrowButton: View {
     
     let color: Color
     let size: CGFloat
@@ -28,7 +28,7 @@ struct CircleArrowRightButton: View {
 
 struct CircleArrowRightButton_Previews: PreviewProvider {
     static var previews: some View {
-        CircleArrowRightButton(color: .white, size: 44)
+        CircleArrowButton(color: .white, size: 44)
             .preferredColorScheme(.dark)
     }
 }

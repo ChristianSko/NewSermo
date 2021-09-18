@@ -11,7 +11,7 @@
 		D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */; };
 		D65A266726EE9EE500D11021 /* FinalOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */; };
 		D65A266926EE9EFB00D11021 /* GenericOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266826EE9EFB00D11021 /* GenericOnboardingView.swift */; };
-		D65A266B26EEA52800D11021 /* CircleArrowRightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */; };
+		D65A266B26EEA52800D11021 /* CircleArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266A26EEA52800D11021 /* CircleArrowButton.swift */; };
 		D6603C9B26EA60DB005AB1E5 /* SermoAvenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603C9A26EA60DB005AB1E5 /* SermoAvenue.swift */; };
 		D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6603C9C26EA60DB005AB1E5 /* HomeView.swift */; };
 		D6603C9F26EA60DC005AB1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */; };
@@ -33,7 +33,7 @@
 		D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOnboardingView.swift; sourceTree = "<group>"; };
 		D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingView.swift; sourceTree = "<group>"; };
 		D65A266826EE9EFB00D11021 /* GenericOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericOnboardingView.swift; sourceTree = "<group>"; };
-		D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleArrowRightButton.swift; sourceTree = "<group>"; };
+		D65A266A26EEA52800D11021 /* CircleArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleArrowButton.swift; sourceTree = "<group>"; };
 		D6603C9726EA60DB005AB1E5 /* NewSermo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewSermo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6603C9A26EA60DB005AB1E5 /* SermoAvenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SermoAvenue.swift; sourceTree = "<group>"; };
 		D6603C9C26EA60DB005AB1E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		D67E60F426F6370400A7AC40 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				D65A266A26EEA52800D11021 /* CircleArrowRightButton.swift */,
+				D65A266A26EEA52800D11021 /* CircleArrowButton.swift */,
 				D6E176F726F62A7600B87BE1 /* XmarkButton.swift */,
 				D67E60EF26F62D7300A7AC40 /* InfoButton.swift */,
 				D67E60F126F6352B00A7AC40 /* RestartButton.swift */,
@@ -271,7 +271,7 @@
 				D6603CB026EB4D07005AB1E5 /* Constants+Ext.swift in Sources */,
 				D6603CB426EB65FE005AB1E5 /* CategoryView.swift in Sources */,
 				D695FFAE26ED602B005BCBD7 /* Navigationbar+Ext.swift in Sources */,
-				D65A266B26EEA52800D11021 /* CircleArrowRightButton.swift in Sources */,
+				D65A266B26EEA52800D11021 /* CircleArrowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

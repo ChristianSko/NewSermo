@@ -20,7 +20,7 @@ struct GenericOnboardingView: View {
                     print("Banana sound goes here")
 
                 }, label: {
-                    CircleArrowRightButton(color: .white, size: 44)
+                    CircleArrowButton(color: .white, size: 44)
                         .offset(x: -50)
                         .padding(20)
                 })

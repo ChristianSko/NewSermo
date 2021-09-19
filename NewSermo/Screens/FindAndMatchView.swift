@@ -20,6 +20,7 @@ struct FindAndMatchView: View {
                 VStack{
                     Text("You just learned Apple.\n Now, find something that has the same:")
                         .font(.title)
+                        .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                         .padding()
                     

@@ -110,49 +110,6 @@ struct Fashcard_Previews: PreviewProvider {
 }
 
 
-struct WordButton: View {
-    
-    let word: String
-    let color: Color
-    @GestureState var press = false
-    let action: (() -> Void)
-    
-    var body: some View {
-        
-        Button(action: action) {
-            Text(word)
-                .font(.title)
-                .frame(width: 240, height: 50)
-                .foregroundColor(.white)
-                .background(color)
-                .clipShape(Capsule())
-                .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-                .scaleEffect(press ? 1.5 : 1)
-                .animation(.spring())
-                .gesture(
-                    LongPressGesture().updating($press) { currenState, gestureState, transaction in
-                        gestureState = currenState
-                    }
-                )
-        }
-    }
-}
 
 
-struct RoundedButton: View {
-    
-    let sfSymbol: String
-    let color: Color
-    
-    var body: some View {
-        
-        Image(systemName: sfSymbol)
-            .font(.title)
-            .foregroundColor(.white)
-            .frame(width: 82,
-                   height: 82)
-            .background(color)
-            .clipShape(Circle())
-            .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-    }
-}
+

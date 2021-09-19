@@ -14,7 +14,7 @@ struct FlashcardView: View {
     
     
     @State private var engine: CHHapticEngine?
-    @State var animation = false
+    @State var wordButtonAnimation = false
     
     var body: some View {
         ZStack{
@@ -36,8 +36,8 @@ struct FlashcardView: View {
         
                     WordButton(word: "Apple",
                                color: color,
-                               press: animation) {
-                        animation.toggle()
+                               press: wordButtonAnimation) {
+                        wordButtonAnimation.toggle()
                     }
                     
 //                    .onAppear(perform: prepareHaptics)

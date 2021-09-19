@@ -10,27 +10,31 @@ import SwiftUI
 struct FindAndMatchView: View {
     
     var body: some View {
-        
-        ZStack{
-            
-            BackgroundView(imageName: "backgroundmixflashcard-market")
-                .edgesIgnoringSafeArea(.all)
-            
-            
-            VStack{
-                Text("You just learned Apple.\n Now, find something that has the same:")
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-                    .padding()
+        ZStack(alignment: .bottomTrailing){
+            ZStack{
                 
-                HStack(spacing: 28){
-                    PictureCell()
-                    PictureCell()
-                    PictureCell()
+                BackgroundView(imageName: "backgroundmixflashcard-market")
+                    .edgesIgnoringSafeArea(.all)
+                
+                
+                VStack{
+                    Text("You just learned Apple.\n Now, find something that has the same:")
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                    HStack(spacing: 28){
+                        PictureCell()
+                        PictureCell()
+                        PictureCell()
+                    }
                 }
+                .offset(x: -20, y: -40)
+
             }
-            .offset(x: -20, y: -40)
+            InfoButton(action: {print("OK")})
         }
+        
     }
 }
 

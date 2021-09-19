@@ -14,6 +14,7 @@ struct FlashcardView: View {
     
     
     @State private var engine: CHHapticEngine?
+    @State var animation = false
     
     var body: some View {
         ZStack{
@@ -34,12 +35,14 @@ struct FlashcardView: View {
                 VStack(alignment: .center, spacing: 50){
         
                     WordButton(word: "Apple",
-                               color: color) {
-                        print("Haptic Feedback on here")
+                               color: color,
+                               press: animation) {
+                        animation.toggle()
                     }
-                    .onAppear(perform: prepareHaptics)
-                    .onTapGesture(perform: complexSuccess)
-                        
+                    
+//                    .onAppear(perform: prepareHaptics)
+//                    .onTapGesture(perform: complexSuccess)
+//
                     HStack(spacing: 70){
                         
                         NavigationLink(destination: FindAndMatchView()) {
@@ -111,6 +114,7 @@ struct WordButton: View {
     
     let word: String
     let color: Color
+    @GestureState var press = false
     let action: (() -> Void)
     
     var body: some View {
@@ -123,6 +127,13 @@ struct WordButton: View {
                 .background(color)
                 .clipShape(Capsule())
                 .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
+                .scaleEffect(press ? 1.5 : 1)
+                .animation(.spring())
+                .gesture(
+                    LongPressGesture().updating($press) { currenState, gestureState, transaction in
+                        gestureState = currenState
+                    }
+                )
         }
     }
 }

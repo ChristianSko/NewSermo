@@ -12,6 +12,7 @@ struct FindAndMatchView: View {
     
     @State private var images = [UIImage(), UIImage(), UIImage()]
     @State private var showSheets = [false, false, false]
+    @State private var cellAnimation = [false, false, false]
     
     var body: some View {
         ZStack(alignment: .bottomTrailing){
@@ -32,8 +33,12 @@ struct FindAndMatchView: View {
                         
                         ForEach(0..<images.count){ picImage in
                             PictureCell(image: images[picImage])
+                                .scaleEffect(cellAnimation[picImage] ? 1.5 : 1)
+                                .animation(.spring())
                                 .onTapGesture {
+                                    cellAnimation[picImage].toggle()
                                     showSheets[picImage] = true
+                                    cellAnimation[picImage].toggle()
                                 }
                                 .sheet(isPresented: $showSheets[picImage]) {
                                     ImagePicker(sourceType: .photoLibrary, selectedImage: $images[picImage])

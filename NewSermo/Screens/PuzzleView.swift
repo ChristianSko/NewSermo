@@ -9,7 +9,26 @@ import SwiftUI
 
 struct PuzzleView: View {
     var body: some View {
-        Text("Puzzle Goes here")
+        ZStack(alignment: .bottomLeading){
+            ZStack(alignment: .bottomTrailing){
+                ZStack{
+                    BackgroundView(imageName: "backgroundpuzzle-market" )
+                        .edgesIgnoringSafeArea(.all)
+                    
+                    CellView(imageName: "apple",
+                             color: Color.blue,
+                             cellSize: 270,
+                             cornerRadius: 10,
+                             borderWidth: 10)
+                        .opacity(0.4)
+                        .offset(y: -30)
+                    
+                }
+                
+                InfoButton(action: {print("show modal")})
+            }
+            RestartButton(action: {print("restart puzzle")})
+        }
     }
 }
 

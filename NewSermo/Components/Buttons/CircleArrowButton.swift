@@ -30,5 +30,6 @@ struct CircleArrowRightButton_Previews: PreviewProvider {
     static var previews: some View {
         CircleArrowButton(color: .white, size: 44)
             .preferredColorScheme(.dark)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

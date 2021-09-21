@@ -50,5 +50,6 @@ struct InitialView_Previews: PreviewProvider {
     
     static var previews: some View {
         InitialOnboardingView(imageName: ImageAsset.onboarding1, onBoardingState: $userPassedOnboarding)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

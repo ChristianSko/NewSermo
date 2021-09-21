@@ -38,5 +38,6 @@ struct WordButton: View {
 struct WordButton_Previews: PreviewProvider {
     static var previews: some View {
         WordButton(word: "Apple", color: .blue, action: {print("action")})
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

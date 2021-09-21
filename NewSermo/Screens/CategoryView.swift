@@ -14,7 +14,6 @@ struct CategoryView: View {
     var body: some View {
         ZStack(alignment: .center) {
             BackgroundView(imageName: backgroundImage)
-                .ignoresSafeArea(.all, edges: .all)
     
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){
@@ -37,6 +36,7 @@ struct CategoryView: View {
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
         CategoryView(backgroundImage: ImageAsset.backgroundMarket)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
 

@@ -26,5 +26,6 @@ struct RestartButton_Previews: PreviewProvider {
     
     static var previews: some View {
         RestartButton(action: {print("refresh button")})
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

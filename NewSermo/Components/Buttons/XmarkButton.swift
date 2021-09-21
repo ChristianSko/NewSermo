@@ -27,5 +27,6 @@ struct XmarkButton_Previews: PreviewProvider {
         
     static var previews: some View {
         XmarkButton(action: {print("Clicked!")} )
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

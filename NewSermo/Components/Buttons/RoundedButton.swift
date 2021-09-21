@@ -29,5 +29,6 @@ struct RoundedButton: View {
 struct RoundedButton_Previews: PreviewProvider {
     static var previews: some View {
         RoundedButton(sfSymbol: SFSymbols.puzzle, color: .blue)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -19,7 +19,6 @@ struct FlashcardView: View {
     var body: some View {
         ZStack{
             BackgroundView(imageName: ImageAsset.backgroundMarketFlashcard)
-                .edgesIgnoringSafeArea(.all)
         
             HStack{
                 Image("apple")
@@ -106,6 +105,7 @@ struct FlashcardView: View {
 struct Fashcard_Previews: PreviewProvider {
     static var previews: some View {
         FlashcardView(color: .blue)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
 

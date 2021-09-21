@@ -13,7 +13,6 @@ struct PuzzleView: View {
             ZStack(alignment: .bottomTrailing){
                 ZStack{
                     BackgroundView(imageName: "backgroundpuzzle-market" )
-                        .edgesIgnoringSafeArea(.all)
                     
                     CellView(imageName: "apple",
                              color: Color.blue,
@@ -35,5 +34,6 @@ struct PuzzleView: View {
 struct PuzzleView_Previews: PreviewProvider {
     static var previews: some View {
         PuzzleView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

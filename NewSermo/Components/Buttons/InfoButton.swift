@@ -30,5 +30,6 @@ struct InfoButton: View {
 struct InfoButton_Previews: PreviewProvider {
     static var previews: some View {
         InfoButton(action: {print("clicked")})
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

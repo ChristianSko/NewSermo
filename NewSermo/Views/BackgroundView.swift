@@ -14,11 +14,13 @@ struct BackgroundView: View {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fill)
+            .ignoresSafeArea()
     }
 }
 
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {
         BackgroundView(imageName: ImageAsset.menuBackground)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -44,5 +44,6 @@ struct GenericOnboardingView: View {
 struct GenericOnboarding_Previews: PreviewProvider {
     static var previews: some View {
         GenericOnboardingView(imageName: ImageAsset.onboarding2)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

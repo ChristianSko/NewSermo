@@ -16,6 +16,7 @@ struct FinalOnboardingView: View {
         ZStack{
             ZStack(alignment: .bottomTrailing){
                 BackgroundView(imageName: imageName)
+                    .ignoresSafeArea()
                 
                 Button(action: {
                     onBoardingState.toggle()
@@ -51,5 +52,6 @@ struct FinalView_Previews: PreviewProvider {
     static var previews: some View {
         FinalOnboardingView(imageName: ImageAsset.onboarding5,
                             onBoardingState: $userPassedOnboarding)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

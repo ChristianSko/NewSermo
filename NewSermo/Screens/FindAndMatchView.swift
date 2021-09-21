@@ -21,7 +21,6 @@ struct FindAndMatchView: View {
             ZStack{
                 
                 BackgroundView(imageName: "backgroundmixflashcard-market")
-                    .edgesIgnoringSafeArea(.all)
                 
                 
                 VStack{
@@ -60,6 +59,7 @@ struct FindAndMatchView: View {
 struct FindAndMatchView_Previews: PreviewProvider {
     static var previews: some View {
         FindAndMatchView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
 

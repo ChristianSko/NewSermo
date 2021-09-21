@@ -58,6 +58,7 @@ struct Onboarding_Previews: PreviewProvider {
         Group {
             Onboarding(userPassedOnboarding: $userPassedOnboarding)
                 .preferredColorScheme(.dark)
+                .previewInterfaceOrientation(.landscapeLeft)
         }
     }
 }

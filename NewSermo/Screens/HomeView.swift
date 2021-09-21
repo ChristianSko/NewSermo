@@ -14,7 +14,6 @@ struct HomeView: View {
     NavigationView {
         ZStack {
                 BackgroundView(imageName: ImageAsset.menuBackground)
-                    .ignoresSafeArea()
                 
                 HStack{
 
@@ -46,14 +45,12 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             HomeView()
+                .previewInterfaceOrientation(.landscapeLeft)
         }
     }
 }
 
-// To see the preview in Landscape add this in the previews(requires Xcode 13 beta)
-//
-// HomeView()
-//.previewInterfaceOrientation(.landscapeLeft)
+
 
 struct CategoryButton: View {
     let imageName: String

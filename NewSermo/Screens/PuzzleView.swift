@@ -8,25 +8,73 @@
 import SwiftUI
 
 struct PuzzleView: View {
+    
+    @State var rightPuzzleAnimation = false
+    @State var leftPuzzleAnimation = false
+    @State var showStars = false
+    
     var body: some View {
         ZStack(alignment: .bottomLeading){
             ZStack(alignment: .bottomTrailing){
                 ZStack{
                     BackgroundView(imageName: "backgroundpuzzle-market" )
                     
-                    CellView(imageName: "apple",
-                             color: Color.blue,
-                             cellSize: 270,
-                             cornerRadius: 10,
-                             borderWidth: 10)
-                        .opacity(0.4)
-                        .offset(y: -30)
+                    
+                    HStack(spacing: 30) {
+                        CellView(imageName: "apple",
+                                 color: Color.blue,
+                                 cellSize: 200,
+                                 cornerRadius: 10,
+                                 borderWidth: 10)
+                            .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
+                            .offset(x: leftPuzzleAnimation ? 280 : 0 ,
+                                    y: leftPuzzleAnimation ? -130 : -60)
+                        
+                            .onTapGesture {
+                                withAnimation {
+                                    leftPuzzleAnimation.toggle()
+                                    if rightPuzzleAnimation && leftPuzzleAnimation {
+                                        withAnimation {
+                                            showStars.toggle()
+                                        }
+                                    }
+                                }
+                            }
+                        
+
+                            CellView(imageName: "apple",
+                                     color: Color.blue,
+                                     cellSize: 300,
+                                     cornerRadius: 10,
+                                     borderWidth: 10)
+                                .opacity(0.4)
+                                .offset(y: -30)
+                            
+                        
+                        CellView(imageName: "apple",
+                                 color: Color.blue,
+                                 cellSize: 200,
+                                 cornerRadius: 10,
+                                 borderWidth: 10)
+                            .scaleEffect(rightPuzzleAnimation ? 1.5 : 1)
+                            .offset(x: rightPuzzleAnimation ? -280 : 0 ,
+                                    y: rightPuzzleAnimation ? -130 : -60)
+                        
+                            .onTapGesture {
+                                withAnimation {
+                                    rightPuzzleAnimation.toggle()
+                                }
+                            }
+                    }
                     
                 }
                 
                 InfoButton(action: {print("show modal")})
             }
-            RestartButton(action: {print("restart puzzle")})
+            RestartButton(action: {
+                leftPuzzleAnimation = false
+                rightPuzzleAnimation = false
+            })
         }
     }
 }

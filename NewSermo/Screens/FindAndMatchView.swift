@@ -14,6 +14,8 @@ struct FindAndMatchView: View {
     @State private var showSheets = [false, false, false]
     @State private var cellAnimation = [false, false, false]
     
+    //TODO: - Add ImagePicker Info.plist privacy request
+    
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             ZStack{

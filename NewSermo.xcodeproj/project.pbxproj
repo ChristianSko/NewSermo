@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D611041D26FBD81800B40555 /* OnePiecePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */; };
 		D65A266226EE9C7200D11021 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266126EE9C7200D11021 /* Onboarding.swift */; };
 		D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */; };
 		D65A266726EE9EE500D11021 /* FinalOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */; };
@@ -27,12 +28,13 @@
 		D67E616426F8F4B800A7AC40 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E616326F8F4B800A7AC40 /* ImagePicker.swift */; };
 		D695FFAE26ED602B005BCBD7 /* Navigationbar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */; };
 		D6E176E926EF967B00B87BE1 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176E826EF967B00B87BE1 /* FlashcardView.swift */; };
-		D6E176F026F3E79C00B87BE1 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176EF26F3E79C00B87BE1 /* PuzzleView.swift */; };
+		D6E176F026F3E79C00B87BE1 /* TwoPiecePuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176EF26F3E79C00B87BE1 /* TwoPiecePuzzleView.swift */; };
 		D6E176F226F3E7BE00B87BE1 /* FindAndMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176F126F3E7BE00B87BE1 /* FindAndMatchView.swift */; };
 		D6E176F826F62A7600B87BE1 /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176F726F62A7600B87BE1 /* XmarkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePiecePuzzle.swift; sourceTree = "<group>"; };
 		D65A266126EE9C7200D11021 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOnboardingView.swift; sourceTree = "<group>"; };
 		D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingView.swift; sourceTree = "<group>"; };
@@ -155,7 +157,7 @@
 		D67E616326F8F4B800A7AC40 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigationbar+Ext.swift"; sourceTree = "<group>"; };
 		D6E176E826EF967B00B87BE1 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
-		D6E176EF26F3E79C00B87BE1 /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		D6E176EF26F3E79C00B87BE1 /* TwoPiecePuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPiecePuzzleView.swift; sourceTree = "<group>"; };
 		D6E176F126F3E7BE00B87BE1 /* FindAndMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAndMatchView.swift; sourceTree = "<group>"; };
 		D6E176F726F62A7600B87BE1 /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D611041B26FBD7CA00B40555 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */,
+				D6E176EF26F3E79C00B87BE1 /* TwoPiecePuzzleView.swift */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
 		D65A266326EE9E7800D11021 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,8 +242,8 @@
 				D6603C9C26EA60DB005AB1E5 /* HomeView.swift */,
 				D6603CB326EB65FE005AB1E5 /* CategoryView.swift */,
 				D6E176E826EF967B00B87BE1 /* FlashcardView.swift */,
-				D6E176EF26F3E79C00B87BE1 /* PuzzleView.swift */,
 				D6E176F126F3E7BE00B87BE1 /* FindAndMatchView.swift */,
+				D611041B26FBD7CA00B40555 /* Puzzle */,
 				D65A266326EE9E7800D11021 /* Onboarding */,
 			);
 			path = Screens;
@@ -484,7 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E176F826F62A7600B87BE1 /* XmarkButton.swift in Sources */,
-				D6E176F026F3E79C00B87BE1 /* PuzzleView.swift in Sources */,
+				D6E176F026F3E79C00B87BE1 /* TwoPiecePuzzleView.swift in Sources */,
 				D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */,
 				D67E616426F8F4B800A7AC40 /* ImagePicker.swift in Sources */,
 				D67E60F026F62D7300A7AC40 /* InfoButton.swift in Sources */,
@@ -500,6 +511,7 @@
 				D65A266226EE9C7200D11021 /* Onboarding.swift in Sources */,
 				D65A266926EE9EFB00D11021 /* GenericOnboardingView.swift in Sources */,
 				D67E60F626F7E76500A7AC40 /* RoundedButton.swift in Sources */,
+				D611041D26FBD81800B40555 /* OnePiecePuzzle.swift in Sources */,
 				D6603CB026EB4D07005AB1E5 /* Constants+Ext.swift in Sources */,
 				D6603CB426EB65FE005AB1E5 /* CategoryView.swift in Sources */,
 				D695FFAE26ED602B005BCBD7 /* Navigationbar+Ext.swift in Sources */,

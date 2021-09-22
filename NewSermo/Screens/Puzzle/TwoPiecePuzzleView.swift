@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PuzzleView: View {
+struct TwoPiecePuzzleView: View {
     
     @State var rightPuzzleAnimation = false
     @State var leftPuzzleAnimation = false
@@ -28,7 +28,7 @@ struct PuzzleView: View {
                                  borderWidth: 10)
                             .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
                             .offset(x: leftPuzzleAnimation ? 280 : 0 ,
-                                    y: leftPuzzleAnimation ? -130 : -60)
+                                    y: leftPuzzleAnimation ? -120 : -60)
                         
                             .onTapGesture {
                                 withAnimation {
@@ -58,7 +58,7 @@ struct PuzzleView: View {
                                  borderWidth: 10)
                             .scaleEffect(rightPuzzleAnimation ? 1.5 : 1)
                             .offset(x: rightPuzzleAnimation ? -280 : 0 ,
-                                    y: rightPuzzleAnimation ? -130 : -60)
+                                    y: rightPuzzleAnimation ? -120 : -60)
                         
                             .onTapGesture {
                                 withAnimation {
@@ -81,7 +81,7 @@ struct PuzzleView: View {
 
 struct PuzzleView_Previews: PreviewProvider {
     static var previews: some View {
-        PuzzleView()
+        TwoPiecePuzzleView()
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct SermoAvenue: App {
     
     // TODO: - Set Up with UserDefaults once app is finished
-    @State var userPassedOnboarding = true
+    @State var userPassedOnboarding = false
     
     var body: some Scene {
         WindowGroup {

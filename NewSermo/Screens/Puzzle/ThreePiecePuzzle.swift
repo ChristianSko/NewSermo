@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ThreePiecePuzzle: View {
     
-    @State var toprightPuzzleAnimation = false
-    @State var bottomRightPuzzleAnimation = false
-    @State var leftPuzzleAnimation = false
+    @State var trailingPuzzleAnimation = false
+    @State var topLeadingPuzzleAnimation = false
+    @State var bottomleadingPuzzleAnimation = false
     @State var showStars = false
     
     
@@ -33,14 +33,14 @@ struct ThreePiecePuzzle: View {
                                      cellSize: 150,
                                      cornerRadius: 10,
                                      borderWidth: 10)
-                                .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
-                                .offset(x: leftPuzzleAnimation ? 280 : 0 ,
-                                        y: leftPuzzleAnimation ? -120 : -60)
+                                .scaleEffect(topLeadingPuzzleAnimation ? 1.5 : 1)
+                                .offset(x: topLeadingPuzzleAnimation ? 280 : 0 ,
+                                        y: topLeadingPuzzleAnimation ? -120 : -60)
                             
                                 .onTapGesture {
                                     withAnimation {
-                                        leftPuzzleAnimation.toggle()
-                                        if toprightPuzzleAnimation && leftPuzzleAnimation {
+                                        topLeadingPuzzleAnimation.toggle()
+                                        if trailingPuzzleAnimation && bottomleadingPuzzleAnimation && topLeadingPuzzleAnimation {
                                             withAnimation {
                                                 showStars.toggle()
                                             }
@@ -54,14 +54,14 @@ struct ThreePiecePuzzle: View {
                                      cellSize: 150,
                                      cornerRadius: 10,
                                      borderWidth: 10)
-                                .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
-                                .offset(x: leftPuzzleAnimation ? 280 : 0 ,
-                                        y: leftPuzzleAnimation ? -120 : -60)
+                                .scaleEffect(bottomleadingPuzzleAnimation ? 1.5 : 1)
+                                .offset(x: bottomleadingPuzzleAnimation ? 280 : 0 ,
+                                        y: bottomleadingPuzzleAnimation ? -120 : -60)
                             
                                 .onTapGesture {
                                     withAnimation {
-                                        leftPuzzleAnimation.toggle()
-                                        if toprightPuzzleAnimation && leftPuzzleAnimation {
+                                        bottomleadingPuzzleAnimation.toggle()
+                                        if trailingPuzzleAnimation && bottomleadingPuzzleAnimation {
                                             withAnimation {
                                                 showStars.toggle()
                                             }
@@ -87,13 +87,13 @@ struct ThreePiecePuzzle: View {
                                  cellSize: 150,
                                  cornerRadius: 10,
                                  borderWidth: 10)
-                            .scaleEffect(toprightPuzzleAnimation ? 1.5 : 1)
-                            .offset(x: toprightPuzzleAnimation ? -280 : 0 ,
-                                    y: toprightPuzzleAnimation ? -120 : -80)
+                            .scaleEffect(trailingPuzzleAnimation ? 1.5 : 1)
+                            .offset(x: trailingPuzzleAnimation ? -280 : 0 ,
+                                    y: trailingPuzzleAnimation ? -120 : -80)
                         
                             .onTapGesture {
                                 withAnimation {
-                                    toprightPuzzleAnimation.toggle()
+                                    trailingPuzzleAnimation.toggle()
                                 }
                             }
                     }
@@ -103,8 +103,8 @@ struct ThreePiecePuzzle: View {
                 InfoButton(action: {print("show modal")})
             }
             RestartButton(action: {
-                leftPuzzleAnimation = false
-                toprightPuzzleAnimation = false
+                bottomleadingPuzzleAnimation = false
+                trailingPuzzleAnimation = false
             })
         }
     }

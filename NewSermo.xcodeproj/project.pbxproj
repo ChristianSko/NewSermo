@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D611041D26FBD81800B40555 /* OnePiecePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */; };
+		D61CA51327027338003255E9 /* ThreePiecePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CA51227027338003255E9 /* ThreePiecePuzzle.swift */; };
 		D65A266226EE9C7200D11021 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266126EE9C7200D11021 /* Onboarding.swift */; };
 		D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */; };
 		D65A266726EE9EE500D11021 /* FinalOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePiecePuzzle.swift; sourceTree = "<group>"; };
+		D61CA51227027338003255E9 /* ThreePiecePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePiecePuzzle.swift; sourceTree = "<group>"; };
 		D65A266126EE9C7200D11021 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOnboardingView.swift; sourceTree = "<group>"; };
 		D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */,
 				D6E176EF26F3E79C00B87BE1 /* TwoPiecePuzzleView.swift */,
+				D61CA51227027338003255E9 /* ThreePiecePuzzle.swift */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61CA51327027338003255E9 /* ThreePiecePuzzle.swift in Sources */,
 				D6E176F826F62A7600B87BE1 /* XmarkButton.swift in Sources */,
 				D6E176F026F3E79C00B87BE1 /* TwoPiecePuzzleView.swift in Sources */,
 				D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */,

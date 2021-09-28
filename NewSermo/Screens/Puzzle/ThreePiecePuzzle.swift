@@ -105,6 +105,7 @@ struct ThreePiecePuzzle: View {
             RestartButton(action: {
                 bottomleadingPuzzleAnimation = false
                 trailingPuzzleAnimation = false
+                topLeadingPuzzleAnimation = false
             })
         }
     }

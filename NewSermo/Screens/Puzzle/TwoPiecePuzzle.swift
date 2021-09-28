@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TwoPiecePuzzleView: View {
+struct TwoPiecePuzzle: View {
     
     @State var rightPuzzleAnimation = false
     @State var leftPuzzleAnimation = false
@@ -81,7 +81,7 @@ struct TwoPiecePuzzleView: View {
 
 struct PuzzleView_Previews: PreviewProvider {
     static var previews: some View {
-        TwoPiecePuzzleView()
+        TwoPiecePuzzle()
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

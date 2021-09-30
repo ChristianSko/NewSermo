@@ -21,15 +21,16 @@ struct TwoPiecePuzzle: View {
                     
                     
                     HStack(spacing: 30) {
-                        CellView(imageName: "apple",
-                                 color: Color.blue,
-                                 cellSize: 200,
-                                 cornerRadius: 10,
-                                 borderWidth: 10)
-                            .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
-                            .offset(x: leftPuzzleAnimation ? 280 : 0 ,
-                                    y: leftPuzzleAnimation ? -120 : -60)
                         
+                        
+                        MaskedPuzzleImage(imageName: "apple",
+                                          color: Color.blue,
+                                          cellSize: 200,
+                                          cornerRadius: 10,
+                                          borderWidth: 10,
+                                          maskImageName: "puzzle-2pc-1")
+                            .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
+                            .offset(x: leftPuzzleAnimation ? 280 : 0)
                             .onTapGesture {
                                 withAnimation {
                                     leftPuzzleAnimation.toggle()
@@ -41,24 +42,25 @@ struct TwoPiecePuzzle: View {
                                 }
                             }
                         
-
-                            CellView(imageName: "apple",
-                                     color: Color.blue,
-                                     cellSize: 300,
-                                     cornerRadius: 10,
-                                     borderWidth: 10)
-                                .opacity(0.4)
-                                .offset(y: -30)
-                            
                         
                         CellView(imageName: "apple",
                                  color: Color.blue,
-                                 cellSize: 200,
+                                 cellSize: 300,
                                  cornerRadius: 10,
                                  borderWidth: 10)
+                            .opacity(0.1)
+                            .offset(y: -30)
+                        
+                        
+                        MaskedPuzzleImage(imageName: "apple",
+                                          color: Color.blue,
+                                          cellSize: 200,
+                                          cornerRadius: 10,
+                                          borderWidth: 10,
+                                          maskImageName: "puzzle-2pc-2")
+                        
                             .scaleEffect(rightPuzzleAnimation ? 1.5 : 1)
-                            .offset(x: rightPuzzleAnimation ? -280 : 0 ,
-                                    y: rightPuzzleAnimation ? -120 : -60)
+                            .offset(x: rightPuzzleAnimation ? -280 : 0)
                         
                             .onTapGesture {
                                 withAnimation {

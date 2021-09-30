@@ -17,7 +17,6 @@ struct MaskedPuzzleImage: View {
     let maskImageName: String
     
     var body: some View {
-        VStack{
             Image(imageName)
                 .resizable()
                 .frame(width: cellSize,
@@ -26,11 +25,7 @@ struct MaskedPuzzleImage: View {
                 .border(Color.blue, width: borderWidth)
                 .cornerRadius(cornerRadius)
                 .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-                .mask {
-                    Image(maskImageName)
-                }
-            
-        }
+                .mask { Image(maskImageName) }
     }
 }
 
@@ -42,8 +37,7 @@ struct MaskedPuzzleImage_Previews: PreviewProvider {
                           cornerRadius: 10,
                           borderWidth: 10,
                           maskImageName: "puzzle-2pc-1")
-            .previewInterfaceOrientation(.landscapeLeft)
-                    
+
     }
 }
 

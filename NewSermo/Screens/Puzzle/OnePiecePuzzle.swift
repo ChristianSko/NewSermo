@@ -27,7 +27,7 @@ struct OnePiecePuzzle: View {
                                  borderWidth: 10)
                             .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
                             .offset(x: leftPuzzleAnimation ? 280 : 0 ,
-                                    y: leftPuzzleAnimation ? -120 : -60)
+                                    y: leftPuzzleAnimation ? -110 : -60)
                         
                             .onTapGesture {
                                 withAnimation {
@@ -46,8 +46,8 @@ struct OnePiecePuzzle: View {
                                      cellSize: 300,
                                      cornerRadius: 10,
                                      borderWidth: 10)
-                                .opacity(0.4)
-                                .offset(y: -30)
+                                .opacity(0.1)
+                                .offset(y: -20)
                             
                     }
                     

@@ -26,5 +26,6 @@ struct PuzzleViewS_Previews: PreviewProvider {
     
     static var previews: some View {
         PuzzleViewS(syllables: 1)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -40,14 +40,21 @@ struct OnePiecePuzzle: View {
                                 }
                             }
                         
-
+                        
+                        ZStack {
                             CellView(imageName: "apple",
-                                     color: Color.blue,
-                                     cellSize: 300,
-                                     cornerRadius: 10,
-                                     borderWidth: 10)
-                                .opacity(0.1)
+                                         color: Color.blue,
+                                         cellSize: 300,
+                                         cornerRadius: 10,
+                                         borderWidth: 10)
+                                    .opacity(0.1)
                                 .offset(y: -20)
+                            
+                            Image("star-puzzle-black")
+                                .resizable()
+                                .frame(width: 370, height: 300)
+                                .hidden()
+                        }
                             
                     }
                     

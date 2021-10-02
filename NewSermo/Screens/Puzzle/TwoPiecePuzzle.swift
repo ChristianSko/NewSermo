@@ -50,13 +50,16 @@ struct TwoPiecePuzzle: View {
                                      cornerRadius: 10,
                                      borderWidth: 10)
                                 .opacity(0.1)
-                            .offset(y: -30)
                             
-                            Image("star-puzzle-black")
-                                .resizable()
-                                .frame(width: 370, height: 300)
-                                .hidden()
+                            
+                            if showStars {
+                                Image("star-puzzle-black")
+                                    .resizable()
+                                    .frame(width: 300,
+                                           height: 300)
+                            }
                         }
+                        .frame(width: 300, height: 300)
                         
                         
                         MaskedPuzzleImage(imageName: "apple",
@@ -72,6 +75,10 @@ struct TwoPiecePuzzle: View {
                             .onTapGesture {
                                 withAnimation {
                                     rightPuzzleAnimation.toggle()
+                                    if rightPuzzleAnimation && leftPuzzleAnimation {
+                                        withAnimation {
+                                            showStars.toggle()
+                                        }
                                 }
                             }
                     }

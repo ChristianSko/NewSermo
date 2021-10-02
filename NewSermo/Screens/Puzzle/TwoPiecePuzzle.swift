@@ -43,24 +43,14 @@ struct TwoPiecePuzzle: View {
                             }
                         
                         
-                        ZStack {
                             CellView(imageName: "apple",
                                      color: Color.blue,
                                      cellSize: 300,
                                      cornerRadius: 10,
                                      borderWidth: 10)
                                 .opacity(0.1)
-                            
-                            
-                            if showStars {
-                                Image("star-puzzle-black")
-                                    .resizable()
-                                    .frame(width: 300,
-                                           height: 300)
-                            }
-                        }
-                        .frame(width: 300, height: 300)
-                        
+                                .offset(y: -30)
+                                                
                         
                         MaskedPuzzleImage(imageName: "apple",
                                           color: Color.blue,
@@ -75,10 +65,6 @@ struct TwoPiecePuzzle: View {
                             .onTapGesture {
                                 withAnimation {
                                     rightPuzzleAnimation.toggle()
-                                    if rightPuzzleAnimation && leftPuzzleAnimation {
-                                        withAnimation {
-                                            showStars.toggle()
-                                        }
                                 }
                             }
                     }

@@ -16,57 +16,80 @@ struct TwoPiecePuzzle: View {
     var body: some View {
         ZStack(alignment: .bottomLeading){
             ZStack(alignment: .bottomTrailing){
-                ZStack{
-                    BackgroundView(imageName: "backgroundpuzzle-market" )
-                    
-                    
-                    HStack(spacing: 30) {
+                ZStack {
+                    ZStack{
+                        BackgroundView(imageName: "backgroundpuzzle-market" )
                         
                         
-                        MaskedPuzzleImage(imageName: "apple",
-                                          color: Color.blue,
-                                          cellSize: 200,
-                                          cornerRadius: 10,
-                                          borderWidth: 10,
-                                          maskImageName: "puzzle-2pc-1")
-                            .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
-                            .offset(x: leftPuzzleAnimation ? 280 : 0)
-                            .onTapGesture {
-                                withAnimation {
-                                    leftPuzzleAnimation.toggle()
-                                    if rightPuzzleAnimation && leftPuzzleAnimation {
-                                        withAnimation {
-                                            showStars.toggle()
+                        HStack(spacing: 30) {
+                            
+                            
+                            MaskedPuzzleImage(imageName: "apple",
+                                              color: Color.blue,
+                                              cellSize: 200,
+                                              cornerRadius: 10,
+                                              borderWidth: 10,
+                                              maskImageName: "puzzle-2pc-1")
+                                .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
+                                .offset(x: leftPuzzleAnimation ? 280 : 0)
+                                .onTapGesture {
+                                    withAnimation {
+                                        leftPuzzleAnimation.toggle()
+                                        if rightPuzzleAnimation && leftPuzzleAnimation {
+                                            withAnimation {
+                                                showStars.toggle()
+                                            }
                                         }
                                     }
                                 }
-                            }
-                        
-                        
-                            CellView(imageName: "apple",
-                                     color: Color.blue,
-                                     cellSize: 300,
-                                     cornerRadius: 10,
-                                     borderWidth: 10)
-                                .opacity(0.1)
-                                .offset(y: -30)
-                                                
-                        
-                        MaskedPuzzleImage(imageName: "apple",
-                                          color: Color.blue,
-                                          cellSize: 200,
-                                          cornerRadius: 10,
-                                          borderWidth: 10,
-                                          maskImageName: "puzzle-2pc-2")
-                        
-                            .scaleEffect(rightPuzzleAnimation ? 1.5 : 1)
-                            .offset(x: rightPuzzleAnimation ? -280 : 0)
-                        
-                            .onTapGesture {
-                                withAnimation {
-                                    rightPuzzleAnimation.toggle()
+                            
+                            
+                                Spacer()
+                                .frame(width: 300,
+                                       height: 300)
+                                                                                    
+                            
+                            MaskedPuzzleImage(imageName: "apple",
+                                              color: Color.blue,
+                                              cellSize: 200,
+                                              cornerRadius: 10,
+                                              borderWidth: 10,
+                                              maskImageName: "puzzle-2pc-2")
+                            
+                                .scaleEffect(rightPuzzleAnimation ? 1.5 : 1)
+                                .offset(x: rightPuzzleAnimation ? -280 : 0)
+                            
+                                .onTapGesture {
+                                    withAnimation {
+                                        rightPuzzleAnimation.toggle()
+                                        if rightPuzzleAnimation && leftPuzzleAnimation {
+                                            withAnimation {
+                                                showStars.toggle()
+                                            }
+                                        }
+                                    }
                                 }
-                            }
+                        }
+                        
+                    }
+                    
+                    CellView(imageName: "apple",
+                             color: Color.blue,
+                             cellSize: 300,
+                             cornerRadius: 10,
+                             borderWidth: 10)
+                        .opacity(0.1)
+                        .offset(y: -30)
+                    
+                    if showStars {
+                        Image("star-puzzle-black")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 370, height: 300)
+                        
+                        Text("Apple")
+                            .font(.system(size: 48))
+                            .fontWeight(.heavy)
                     }
                     
                 }
@@ -76,6 +99,7 @@ struct TwoPiecePuzzle: View {
             RestartButton(action: {
                 leftPuzzleAnimation = false
                 rightPuzzleAnimation = false
+                showStars = false
             })
         }
     }

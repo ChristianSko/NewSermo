@@ -26,7 +26,7 @@ struct OnePiecePuzzle: View {
                                  cornerRadius: 10,
                                  borderWidth: 10)
                             .scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
-                            .offset(x: leftPuzzleAnimation ? 280 : 0 ,
+                            .offset(x: leftPuzzleAnimation ? 310 : 0 ,
                                     y: leftPuzzleAnimation ? -110 : -60)
                         
                             .onTapGesture {
@@ -43,19 +43,25 @@ struct OnePiecePuzzle: View {
                         
                         ZStack {
                             CellView(imageName: "apple",
-                                         color: Color.blue,
-                                         cellSize: 300,
-                                         cornerRadius: 10,
-                                         borderWidth: 10)
-                                    .opacity(0.1)
+                                     color: Color.blue,
+                                     cellSize: 300,
+                                     cornerRadius: 10,
+                                     borderWidth: 10)
+                                .opacity(0.1)
                                 .offset(y: -20)
                             
-                            Image("star-puzzle-black")
-                                .resizable()
-                                .frame(width: 370, height: 300)
-                                .hidden()
-                        }
                             
+                            if showStars {
+                                Image("star-puzzle-black")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 370, height: 300)
+                                
+                                Text("Apple")
+                                    .font(.system(size: 48))
+                                    .fontWeight(.heavy)
+                            }
+                        }
                     }
                     
                 }
@@ -64,6 +70,7 @@ struct OnePiecePuzzle: View {
             }
             RestartButton(action: {
                 leftPuzzleAnimation = false
+                showStars = false
             })
         }
     }

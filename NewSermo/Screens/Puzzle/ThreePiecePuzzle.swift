@@ -37,7 +37,7 @@ struct ThreePiecePuzzle: View {
                                                   maskImageName: "puzzle-3pc-2")
                                     .scaleEffect(topLeadingPuzzleAnimation ? 2 : 1)
                                     .offset(x: topLeadingPuzzleAnimation ? 260 : 0 ,
-                                            y: topLeadingPuzzleAnimation ? 20 : 0)
+                                            y: topLeadingPuzzleAnimation ? 29 : 0)
                                     .onTapGesture {
                                         withAnimation {
                                             topLeadingPuzzleAnimation.toggle()
@@ -58,7 +58,7 @@ struct ThreePiecePuzzle: View {
                                                   maskImageName: "puzzle-3pc-3")
                                     .scaleEffect(bottomleadingPuzzleAnimation ? 2 : 1)
                                     .offset(x: bottomleadingPuzzleAnimation ? 260 : 0 ,
-                                            y: bottomleadingPuzzleAnimation ? -140 : -65)
+                                            y: bottomleadingPuzzleAnimation ? -130 : -65)
                                 
                                     .onTapGesture {
                                         withAnimation {
@@ -91,7 +91,7 @@ struct ThreePiecePuzzle: View {
                                               maskImageName: "puzzle-3pc-1")
                                 .scaleEffect(trailingPuzzleAnimation ? 2 : 1)
                                 .offset(x: trailingPuzzleAnimation ? -250 : 0 ,
-                                        y: trailingPuzzleAnimation ? -10 : 0)
+                                        y: trailingPuzzleAnimation ? 0 : 0)
                             
                                 .onTapGesture {
                                     withAnimation {

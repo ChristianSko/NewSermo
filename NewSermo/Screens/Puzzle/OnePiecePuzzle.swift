@@ -11,6 +11,7 @@ struct OnePiecePuzzle: View {
     
     @State var leftPuzzleAnimation = false
     @State var showStars = false
+    @State var scale: CGFloat = 1
     
     var body: some View {
         ZStack(alignment: .bottomLeading){
@@ -30,10 +31,10 @@ struct OnePiecePuzzle: View {
                                     y: leftPuzzleAnimation ? -110 : -60)
                         
                             .onTapGesture {
-                                withAnimation {
+                                withAnimation(.linear(duration: 0.2)) {
                                     leftPuzzleAnimation.toggle()
                                     if leftPuzzleAnimation {
-                                        withAnimation {
+                                        withAnimation(.easeIn(duration: 0.5)) {
                                             showStars.toggle()
                                         }
                                     }
@@ -51,16 +52,20 @@ struct OnePiecePuzzle: View {
                                 .offset(y: -20)
                             
                             
-                            if showStars {
                                 Image("star-puzzle-black")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 370, height: 300)
+                                    .scaleEffect(showStars ? 1.2 : 0.5)
+                                    .rotationEffect(showStars ? .degrees(180) : .degrees(0))
+                                    .opacity(showStars ? 1 : 0)
                                 
                                 Text("Apple")
                                     .font(.system(size: 48))
                                     .fontWeight(.heavy)
-                            }
+                                    .opacity(showStars ? 1 : 0)
+                                    
+                            
                         }
                     }
                     

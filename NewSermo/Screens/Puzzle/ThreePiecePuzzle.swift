@@ -39,10 +39,10 @@ struct ThreePiecePuzzle: View {
                                     .offset(x: topLeadingPuzzleAnimation ? 260 : 0 ,
                                             y: topLeadingPuzzleAnimation ? 29 : 0)
                                     .onTapGesture {
-                                        withAnimation {
+                                        withAnimation(.linear(duration: 0.2)) {
                                             topLeadingPuzzleAnimation.toggle()
                                             if trailingPuzzleAnimation && bottomleadingPuzzleAnimation && topLeadingPuzzleAnimation {
-                                                withAnimation {
+                                                withAnimation(.easeIn(duration: 0.5)) {
                                                     showStars.toggle()
                                                 }
                                             }
@@ -61,10 +61,10 @@ struct ThreePiecePuzzle: View {
                                             y: bottomleadingPuzzleAnimation ? -130 : -65)
                                 
                                     .onTapGesture {
-                                        withAnimation {
+                                        withAnimation(.linear(duration: 0.2)) {
                                             bottomleadingPuzzleAnimation.toggle()
                                             if topLeadingPuzzleAnimation && bottomleadingPuzzleAnimation && topLeadingPuzzleAnimation {
-                                                withAnimation {
+                                                withAnimation(.easeIn(duration: 0.5)) {
                                                     showStars.toggle()
                                                 }
                                             }
@@ -94,10 +94,10 @@ struct ThreePiecePuzzle: View {
                                         y: trailingPuzzleAnimation ? 0 : 0)
                             
                                 .onTapGesture {
-                                    withAnimation {
+                                    withAnimation(.linear(duration: 0.2)) {
                                         trailingPuzzleAnimation.toggle()
                                         if topLeadingPuzzleAnimation && bottomleadingPuzzleAnimation && topLeadingPuzzleAnimation {
-                                            withAnimation {
+                                            withAnimation(.easeIn(duration: 0.5)) {
                                                 showStars.toggle()
                                             }
                                         }
@@ -115,16 +115,18 @@ struct ThreePiecePuzzle: View {
                         .opacity(0.1)
                         .offset(y: -30)
                     
-                    if showStars {
                         Image("star-puzzle-black")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 370, height: 300)
+                            .scaleEffect(showStars ? 1.2 : 0.5)
+                            .rotationEffect(showStars ? .degrees(180) : .degrees(0))
+                            .opacity(showStars ? 1 : 0)
                         
                         Text("Apple")
                             .font(.system(size: 48))
                             .fontWeight(.heavy)
-                    }
+                            .opacity(showStars ? 1 : 0)
                     
                 }
                 

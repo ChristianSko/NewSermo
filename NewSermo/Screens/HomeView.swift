@@ -9,25 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     
+    let data = Categories()
+    
     var body: some View {
         
-    NavigationView {
-        ZStack {
+        NavigationView {
+            ZStack {
                 BackgroundView(imageName: ImageAsset.menuBackground)
                 
                 HStack{
-
-                    NavigationLink(destination: CategoryView(backgroundImage: ImageAsset.backgroundMarket)) {
+                    NavigationLink(destination: CategoryView(data: data.market)) {
                         CategoryButton(imageName: ImageAsset.categoryMarketIcon)
                             .offset(y: 20)
                     }
-
-                    NavigationLink(destination: CategoryView(backgroundImage: ImageAsset.backgroundPark)) {
+                    
+                    NavigationLink(destination: CategoryView(data: data.park)){
                         CategoryButton(imageName: ImageAsset.categoryParkIcon)
                             .offset(y: -30)
                     }
-
-                    NavigationLink(destination: CategoryView(backgroundImage: ImageAsset.backgroundHome)) {
+                    
+                    NavigationLink(destination: CategoryView(data: data.home)) {
                         CategoryButton(imageName: ImageAsset.categoryHomeIcon)
                             .offset(y: 20)
                     }

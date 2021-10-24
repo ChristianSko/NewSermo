@@ -6,12 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 
 // MARK: - IMAGE ASSET STRINGS
 enum ImageAsset {
-    
     
     // Onboarding Assets
     static let onboarding1 = "onboarding_1"
@@ -20,11 +20,6 @@ enum ImageAsset {
     static let onboarding4 = "onboarding_4"
     static let onboarding5 = "onboarding_5"
     
-    
-    
-    
-    
-   
     // App Background Assets
     
     static let menuBackground               = "background-menu"
@@ -34,8 +29,16 @@ enum ImageAsset {
     static let backgroundHome               = "background-home"
     
     static let backgroundMarketFlashcard    = "backgroundmixflashcard-market"
-    static let backgroundflashCardPark      = "backgroundmixflashcard-park"
-    static let backgroundflashCardHome      = "backgroundmixflashcard-home"
+    static let backgroundParkFlashcard      = "backgroundmixflashcard-park"
+    static let backgroundHomeFlashcard      = "backgroundmixflashcard-home"
+    
+    static let backgroundMarketPuzzle       = "backgroundpuzzle-market"
+    static let backgroundParkPuzzle         = "backgroundpuzzle-park"
+    static let backgroundHomePuzzle         = "backgroundpuzzle-home"
+    
+    static let backgroundMarketPhoto        = "backgroundmixfind-market"
+    static let backgroundParkPhoto          = "backgroundmixfind-park"
+    static let backgroundHomePhoto          = "backgroundmixfind-home"
     
     // Buttons Assets
     static let categoryMarketIcon           = "category-market"
@@ -44,6 +47,13 @@ enum ImageAsset {
     
     static let skipButton                   = "skip"
     static let playButton                   = "play"
+    
+}
+
+extension Color {
+    static let market = Color.blue
+    static let park   = Color.red
+    static let home   = Color.purple
     
 }
 

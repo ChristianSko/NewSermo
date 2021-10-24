@@ -11,7 +11,7 @@ import CoreHaptics
 struct FlashcardView: View {
     
     let color: Color
-    
+    let flashcard: Flashcard
     
     @State private var engine: CHHapticEngine?
     @State var wordButtonAnimation = false
@@ -21,7 +21,7 @@ struct FlashcardView: View {
             BackgroundView(imageName: ImageAsset.backgroundMarketFlashcard)
         
             HStack{
-                Image("apple")
+                Image(flashcard.name)
                     .resizable()
                     .frame(width: 300, height: 300)
                     .aspectRatio(contentMode: .fit)
@@ -33,7 +33,7 @@ struct FlashcardView: View {
                 
                 VStack(alignment: .center, spacing: 50){
         
-                    WordButton(word: "Apple",
+                    WordButton(word: flashcard.name,
                                color: color,
                                press: wordButtonAnimation) {
                         wordButtonAnimation.toggle()
@@ -102,13 +102,13 @@ struct FlashcardView: View {
     
 }
 
-struct Fashcard_Previews: PreviewProvider {
-    static var previews: some View {
-        FlashcardView(color: .blue)
-            .previewInterfaceOrientation(.landscapeLeft)
-    }
-}
-
+//struct Fashcard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FlashcardView(color: .blue)
+//            .previewInterfaceOrientation(.landscapeLeft)
+//    }
+//}
+//
 
 
 

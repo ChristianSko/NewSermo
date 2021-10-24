@@ -9,18 +9,19 @@ import SwiftUI
 
 struct CategoryView: View {
     
-    let backgroundImage: String
+    let data: Flashcards
     
     var body: some View {
         ZStack(alignment: .center) {
-            BackgroundView(imageName: backgroundImage)
+            BackgroundView(imageName: data.backgrounds[.category]!)
     
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){
-                    ForEach(0..<10) { cell in
-                        NavigationLink(destination: FlashcardView(color: .blue)) {
-                            CellView(imageName: "apple",
-                                     color: Color.blue,
+                    ForEach(0..<data.flashcards.count) { cell in
+                        NavigationLink(destination: FlashcardView(color: data.color,
+                                                                 flashcard: data.flashcards[cell])) {
+                            CellView(imageName: data.flashcards[cell].name,
+                                     color: data.color,
                                      cellSize: 200,
                                      cornerRadius: 10,
                                      borderWidth: 10)
@@ -33,12 +34,12 @@ struct CategoryView: View {
     }
 }
 
-struct CategoryView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryView(backgroundImage: ImageAsset.backgroundMarket)
-            .previewInterfaceOrientation(.landscapeLeft)
-    }
-}
+//struct CategoryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CategoryView(backgroundImage: ImageAsset.backgroundMarket, data: Categories().market)
+//            .previewInterfaceOrientation(.landscapeLeft)
+//    }
+//}
 
 struct CellView: View {
     
@@ -56,7 +57,7 @@ struct CellView: View {
                 .frame(width: cellSize,
                        height: cellSize)
                 .aspectRatio(contentMode: .fit)
-                .border(Color.blue, width: borderWidth)
+                .border(color, width: borderWidth)
                 .cornerRadius(cornerRadius)
                 .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
             

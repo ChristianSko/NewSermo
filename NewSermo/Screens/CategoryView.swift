@@ -34,12 +34,19 @@ struct CategoryView: View {
     }
 }
 
-//struct CategoryView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CategoryView(backgroundImage: ImageAsset.backgroundMarket, data: Categories().market)
-//            .previewInterfaceOrientation(.landscapeLeft)
-//    }
-//}
+struct CategoryView_Previews: PreviewProvider {
+        
+    static var previews: some View {
+        CategoryView(data: Flashcards(flashcards:
+                                        [Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
+                                         Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
+                                         Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
+                                         Flashcard(name: "apple", ahapWave: "", ahapFile: "")],
+                                         color: Color.blue,
+                                         backgrounds: [.category: ImageAsset.backgroundMarket]))
+            .previewInterfaceOrientation(.landscapeLeft)
+    }
+}
 
 struct CellView: View {
     

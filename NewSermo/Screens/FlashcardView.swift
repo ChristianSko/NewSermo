@@ -102,13 +102,13 @@ struct FlashcardView: View {
     
 }
 
-//struct Fashcard_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FlashcardView(color: .blue)
-//            .previewInterfaceOrientation(.landscapeLeft)
-//    }
-//}
-//
+struct Fashcard_Previews: PreviewProvider {
+    static var previews: some View {
+        FlashcardView(color: .blue, flashcard: Flashcard(name: "apple", ahapWave: "", ahapFile: ""))
+            .previewInterfaceOrientation(.landscapeLeft)
+    }
+}
+
 
 
 

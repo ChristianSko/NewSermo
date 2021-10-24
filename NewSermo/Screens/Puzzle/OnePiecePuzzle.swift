@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OnePiecePuzzle: View {
     
+//    let flashcard: Flashcard
+    
     @State var leftPuzzleAnimation = false
     @State var showStars = false
     @State var scale: CGFloat = 1

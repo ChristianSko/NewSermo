@@ -13,13 +13,14 @@ struct CategoryView: View {
     
     var body: some View {
         ZStack(alignment: .center) {
-            BackgroundView(imageName: data.backgrounds[.category]!)
+            BackgroundView(imageName: data.background[.category]!)
     
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20){
                     ForEach(0..<data.flashcards.count) { cell in
-                        NavigationLink(destination: FlashcardView(color: data.color,
-                                                                 flashcard: data.flashcards[cell])) {
+						NavigationLink(destination: FlashcardView(flashcard: data.flashcards[cell],
+																  category: data.category,
+																  color: data.color)) {
                             CellView(imageName: data.flashcards[cell].name,
                                      color: data.color,
                                      cellSize: 200,
@@ -43,7 +44,8 @@ struct CategoryView_Previews: PreviewProvider {
                                          Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
                                          Flashcard(name: "apple", ahapWave: "", ahapFile: "")],
                                          color: Color.blue,
-                                         backgrounds: [.category: ImageAsset.backgroundMarket]))
+                                      background: [.category: ImageAsset.backgroundMarket],
+                                      category: .market))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

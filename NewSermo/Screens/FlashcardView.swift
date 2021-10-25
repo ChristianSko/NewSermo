@@ -10,8 +10,9 @@ import CoreHaptics
 
 struct FlashcardView: View {
     
-    let color: Color
     let flashcard: Flashcard
+	let category: Category
+	let color: Color
     
     @State private var engine: CHHapticEngine?
     @State var wordButtonAnimation = false
@@ -104,7 +105,8 @@ struct FlashcardView: View {
 
 struct Fashcard_Previews: PreviewProvider {
     static var previews: some View {
-        FlashcardView(color: .blue, flashcard: Flashcard(name: "apple", ahapWave: "", ahapFile: ""))
+		FlashcardView(flashcard: Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
+					  category: .market, color: Color.market)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

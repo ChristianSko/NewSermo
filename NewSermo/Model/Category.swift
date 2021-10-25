@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+enum Category {
+    case home
+	case park
+	case market
+}
 
 enum Screen {
-    case category
+	case category
     case flashcard
     case puzzle
     case photo
@@ -18,7 +23,8 @@ enum Screen {
 struct Flashcards {
     let flashcards: [Flashcard]
     let color: Color
-    let backgrounds: [Screen: String]
+    let background: [Screen: String]
+    let category: Category
 }
 
 struct Flashcard {
@@ -59,10 +65,11 @@ struct Categories {
                                                  ahapFile: "")],
                           
                           color: Color.home,
-                          backgrounds: [.category  : ImageAsset.backgroundHome,
+                          background: [.category  : ImageAsset.backgroundHome,
                                         .flashcard : ImageAsset.backgroundHomeFlashcard,
                                         .puzzle    : ImageAsset.backgroundHomePuzzle,
-                                        .photo     : ImageAsset.backgroundHomePhoto])
+                                        .photo     : ImageAsset.backgroundHomePhoto],
+                          category: .home)
     
     let market = Flashcards(flashcards: [Flashcard(name: "apple",
                                                  ahapWave: "",
@@ -93,10 +100,11 @@ struct Categories {
                                                  ahapFile: "")],
                           
                           color: Color.market,
-                            backgrounds: [.category   : ImageAsset.backgroundMarket,
+                            background: [.category   : ImageAsset.backgroundMarket,
                                           .flashcard  : ImageAsset.backgroundMarketFlashcard,
                                           .puzzle     : ImageAsset.backgroundMarketPuzzle,
-                                          .photo      : ImageAsset.backgroundMarketPhoto])
+                                          .photo      : ImageAsset.backgroundMarketPhoto],
+                            category: .market)
         
     
     let park = Flashcards(flashcards: [Flashcard(name: "bench",
@@ -128,9 +136,10 @@ struct Categories {
                                                  ahapFile: "")],
                           
                           color: Color.park,
-                          backgrounds: [.category   : ImageAsset.backgroundPark,
+                          background: [.category   : ImageAsset.backgroundPark,
                                         .flashcard  : ImageAsset.backgroundParkFlashcard,
                                         .puzzle     : ImageAsset.backgroundParkPuzzle,
-                                        .photo      : ImageAsset.backgroundParkPhoto])
+                                        .photo      : ImageAsset.backgroundParkPhoto],
+                          category: .park)
 }
 

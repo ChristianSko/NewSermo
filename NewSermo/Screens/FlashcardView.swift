@@ -22,7 +22,7 @@ struct FlashcardView: View {
             BackgroundView(imageName: ImageAsset.backgroundMarketFlashcard)
         
             HStack{
-                Image(flashcard.name)
+				Image(flashcard.name)
                     .resizable()
                     .frame(width: 300, height: 300)
                     .aspectRatio(contentMode: .fit)
@@ -34,7 +34,7 @@ struct FlashcardView: View {
                 
                 VStack(alignment: .center, spacing: 50){
         
-                    WordButton(word: flashcard.name,
+					WordButton(word: flashcard.name.uppercased(),
                                color: color,
                                press: wordButtonAnimation) {
                         wordButtonAnimation.toggle()
@@ -45,7 +45,7 @@ struct FlashcardView: View {
 //
                     HStack(spacing: 70){
                         
-                        NavigationLink(destination: FindAndMatchView()) {
+						NavigationLink(destination: FindAndMatchView(flashcard: flashcard)) {
                             RoundedButton(sfSymbol: SFSymbols.photos,
                                           color: color)
                         }

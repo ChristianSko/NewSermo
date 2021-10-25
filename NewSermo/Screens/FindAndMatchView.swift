@@ -9,10 +9,12 @@ import SwiftUI
 
 struct FindAndMatchView: View {
     
-    
+	let flashcard: Flashcard
+	
     @State private var images = [UIImage(), UIImage(), UIImage()]
     @State private var showSheets = [false, false, false]
     @State private var cellAnimation = [false, false, false]
+	@State private var formType = ["SHAPE", "COLOR", "TEXTURE"]
     
     //TODO: - Add ImagePicker Info.plist privacy request
     
@@ -24,7 +26,7 @@ struct FindAndMatchView: View {
                 
                 
                 VStack{
-                    Text("You just learned Apple.\n Now, find something that has the same:")
+					Text("You just learned \(flashcard.name).\n Now, find something that has the same:")
                         .font(.title)
                         .foregroundColor(.black)
                         .multilineTextAlignment(.center)
@@ -33,7 +35,7 @@ struct FindAndMatchView: View {
                     HStack(spacing: 28){
                         
                         ForEach(0..<images.count){ picImage in
-                            PictureCell(image: images[picImage])
+							PictureCell(image: images[picImage], text: formType[picImage])
                                 .scaleEffect(cellAnimation[picImage] ? 1.5 : 1)
                                 .animation(.spring())
                                 .onTapGesture {
@@ -58,7 +60,7 @@ struct FindAndMatchView: View {
 
 struct FindAndMatchView_Previews: PreviewProvider {
     static var previews: some View {
-        FindAndMatchView()
+		FindAndMatchView(flashcard: Flashcard(name: "Banana", ahapWave: "", ahapFile: ""))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
@@ -66,9 +68,10 @@ struct FindAndMatchView_Previews: PreviewProvider {
 
 struct PictureCell: View {
     
-    
+	
     let image: UIImage
-    
+	let text: String
+	
     var body: some View {
         
         ZStack{
@@ -80,7 +83,7 @@ struct PictureCell: View {
                     .font(Font.title.weight(.semibold))
                     .frame(width: 96, height: 78, alignment: .center)
                 
-                Text("SHAPE")
+                Text(text)
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)

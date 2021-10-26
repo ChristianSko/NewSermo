@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnePiecePuzzle: View {
     
-//    let flashcard: Flashcard
+    let flashcard: Flashcard
     
     @State var leftPuzzleAnimation = false
     @State var showStars = false
@@ -23,7 +23,7 @@ struct OnePiecePuzzle: View {
                     
                     
                     HStack(spacing: 30) {
-                        CellView(imageName: "apple",
+						CellView(imageName: flashcard.name,
                                  color: Color.blue,
                                  cellSize: 200,
                                  cornerRadius: 10,
@@ -45,7 +45,7 @@ struct OnePiecePuzzle: View {
                         
                         
                         ZStack {
-                            CellView(imageName: "apple",
+                            CellView(imageName: flashcard.name,
                                      color: Color.blue,
                                      cellSize: 300,
                                      cornerRadius: 10,
@@ -62,7 +62,7 @@ struct OnePiecePuzzle: View {
                                     .rotationEffect(showStars ? .degrees(180) : .degrees(0))
                                     .opacity(showStars ? 1 : 0)
                                 
-                                Text("Apple")
+                                Text(flashcard.name)
                                     .font(.system(size: 48))
                                     .fontWeight(.heavy)
                                     .opacity(showStars ? 1 : 0)
@@ -85,7 +85,7 @@ struct OnePiecePuzzle: View {
 
 struct OnePiecePuzzle_Previews: PreviewProvider {
     static var previews: some View {
-        OnePiecePuzzle()
+		OnePiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

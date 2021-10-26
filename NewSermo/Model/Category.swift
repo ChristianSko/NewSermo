@@ -31,6 +31,7 @@ struct Flashcard {
     let name: String
     let ahapWave: String
     let ahapFile: String
+	let syllables: Int
 }
 
 
@@ -38,31 +39,38 @@ struct Categories {
     
     let home = Flashcards(flashcards: [Flashcard(name: "bedroom",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
                                       
                                        Flashcard(name: "dinner",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
                                        
                                        Flashcard(name: "fork",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 1),
 
                                        Flashcard(name: "pillow",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
 
                                        Flashcard(name: "spoon",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 1),
                                        
                                        Flashcard(name: "table",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
                                        
                                        Flashcard(name: "window",
                                                  ahapWave: "",
-                                                 ahapFile: "")],
+												 ahapFile: "",
+												 syllables: 2)],
                           
                           color: Color.home,
                           background: [.category  : ImageAsset.backgroundHome,
@@ -73,31 +81,38 @@ struct Categories {
     
     let market = Flashcards(flashcards: [Flashcard(name: "apple",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												   ahapFile: "",
+												   syllables: 2),
                                       
                                        Flashcard(name: "banana",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 3),
                                        
                                        Flashcard(name: "cookie",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
 
                                        Flashcard(name: "eggs",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 1),
                                          
                                        Flashcard(name: "kiwi",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
                                          
                                        Flashcard(name: "spaghetti",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 3),
                                          
                                        Flashcard(name: "fish",
                                                  ahapWave: "",
-                                                 ahapFile: "")],
+												 ahapFile: "",
+												 syllables: 1)],
                           
                           color: Color.market,
                             background: [.category   : ImageAsset.backgroundMarket,
@@ -109,31 +124,36 @@ struct Categories {
     
     let park = Flashcards(flashcards: [Flashcard(name: "bench",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "", syllables: 1),
                                       
                                        Flashcard(name: "duck",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "", syllables: 1),
                                        
                                        Flashcard(name: "flower",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
 
                                        Flashcard(name: "garden",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
 
                                        Flashcard(name: "grass",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 1),
                                       
                                        Flashcard(name: "playground",
                                                  ahapWave: "",
-                                                 ahapFile: ""),
+												 ahapFile: "",
+												 syllables: 2),
                                        
                                        Flashcard(name: "walk",
                                                  ahapWave: "",
-                                                 ahapFile: "")],
+												 ahapFile: "",
+												 syllables: 1)],
                           
                           color: Color.park,
                           background: [.category   : ImageAsset.backgroundPark,

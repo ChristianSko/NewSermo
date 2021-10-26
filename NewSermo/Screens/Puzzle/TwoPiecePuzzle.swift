@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TwoPiecePuzzle: View {
     
+	let flashcard: Flashcard
+	
     @State var rightPuzzleAnimation = false
     @State var leftPuzzleAnimation = false
     @State var showStars = false
@@ -24,7 +26,7 @@ struct TwoPiecePuzzle: View {
                         HStack(spacing: 30) {
                             
                             
-                            MaskedPuzzleImage(imageName: "apple",
+							MaskedPuzzleImage(imageName: flashcard.name,
                                               color: Color.blue,
                                               cellSize: 200,
                                               cornerRadius: 10,
@@ -49,7 +51,7 @@ struct TwoPiecePuzzle: View {
                                        height: 300)
                                                                                     
                             
-                            MaskedPuzzleImage(imageName: "apple",
+							MaskedPuzzleImage(imageName: flashcard.name,
                                               color: Color.blue,
                                               cellSize: 200,
                                               cornerRadius: 10,
@@ -73,7 +75,7 @@ struct TwoPiecePuzzle: View {
                         
                     }
                     
-                    CellView(imageName: "apple",
+                    CellView(imageName: flashcard.name,
                              color: Color.blue,
                              cellSize: 300,
                              cornerRadius: 10,
@@ -89,7 +91,7 @@ struct TwoPiecePuzzle: View {
                             .rotationEffect(showStars ? .degrees(180) : .degrees(0))
                             .opacity(showStars ? 1 : 0)
                         
-                        Text("Apple")
+					Text(flashcard.name.capitalized)
                             .font(.system(size: 48))
                             .fontWeight(.heavy)
                             .opacity(showStars ? 1 : 0)
@@ -110,7 +112,7 @@ struct TwoPiecePuzzle: View {
 
 struct PuzzleView_Previews: PreviewProvider {
     static var previews: some View {
-        TwoPiecePuzzle()
+		TwoPiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

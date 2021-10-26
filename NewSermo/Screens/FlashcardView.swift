@@ -50,7 +50,7 @@ struct FlashcardView: View {
                                           color: color)
                         }
                         
-                        NavigationLink(destination: PuzzleViewS(syllables: 2)) {
+						NavigationLink(destination: PuzzleViewS(syllables: 2, flashcard: flashcard)) {
                             RoundedButton(sfSymbol: SFSymbols.puzzle,
                                           color: color)
                         }
@@ -63,7 +63,8 @@ struct FlashcardView: View {
             .cornerRadius(10)
             .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
         }
-        
+		.accentColor(color)
+
     }
     
     
@@ -105,7 +106,7 @@ struct FlashcardView: View {
 
 struct Fashcard_Previews: PreviewProvider {
     static var previews: some View {
-		FlashcardView(flashcard: Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
+		FlashcardView(flashcard: Flashcard(name: "apple", ahapWave: "", ahapFile: "", syllables: 2),
 					  category: .market, color: Color.market)
             .previewInterfaceOrientation(.landscapeLeft)
     }

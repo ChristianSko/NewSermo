@@ -39,10 +39,10 @@ struct CategoryView_Previews: PreviewProvider {
         
     static var previews: some View {
         CategoryView(data: Flashcards(flashcards:
-                                        [Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
-                                         Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
-                                         Flashcard(name: "apple", ahapWave: "", ahapFile: ""),
-                                         Flashcard(name: "apple", ahapWave: "", ahapFile: "")],
+										[Flashcard(name: "apple", ahapWave: "", ahapFile: "", syllables: 2),
+										 Flashcard(name: "apple", ahapWave: "", ahapFile: "", syllables: 2),
+										 Flashcard(name: "apple", ahapWave: "", ahapFile: "", syllables: 2),
+										 Flashcard(name: "apple", ahapWave: "", ahapFile: "", syllables: 2)],
                                          color: Color.blue,
                                       background: [.category: ImageAsset.backgroundMarket],
                                       category: .market))

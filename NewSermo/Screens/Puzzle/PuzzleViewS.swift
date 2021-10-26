@@ -10,14 +10,15 @@ import SwiftUI
 struct PuzzleViewS: View {
     
     let syllables: Int
+	let flashcard: Flashcard
     
     var body: some View {
-        if syllables == 1 {
-            OnePiecePuzzle()
-        } else if syllables == 2 {
-            TwoPiecePuzzle()
+		if flashcard.syllables == 1 {
+            OnePiecePuzzle(flashcard: flashcard)
+		} else if flashcard.syllables == 2 {
+			TwoPiecePuzzle(flashcard: flashcard)
         } else {
-            ThreePiecePuzzle()
+			ThreePiecePuzzle(flashcard: flashcard)
         }
     }
 }
@@ -25,7 +26,7 @@ struct PuzzleViewS: View {
 struct PuzzleViewS_Previews: PreviewProvider {
     
     static var previews: some View {
-        PuzzleViewS(syllables: 1)
+		PuzzleViewS(syllables: 1, flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

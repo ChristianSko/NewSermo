@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ThreePiecePuzzle: View {
+	
+	let flashcard: Flashcard
     
     @State var trailingPuzzleAnimation = false
     @State var topLeadingPuzzleAnimation = false
@@ -29,7 +31,7 @@ struct ThreePiecePuzzle: View {
                             
                             
                             VStack {
-                                MaskedPuzzleImage(imageName: "apple",
+								MaskedPuzzleImage(imageName: flashcard.name,
                                                   color: Color.blue,
                                                   cellSize: 150,
                                                   cornerRadius: 10,
@@ -50,7 +52,7 @@ struct ThreePiecePuzzle: View {
                                     }
                                 
                                 
-                                MaskedPuzzleImage(imageName: "apple",
+								MaskedPuzzleImage(imageName: flashcard.name,
                                                   color: Color.blue,
                                                   cellSize: 150,
                                                   cornerRadius: 10,
@@ -83,7 +85,7 @@ struct ThreePiecePuzzle: View {
                             
                             
                             
-                            MaskedPuzzleImage(imageName: "apple",
+							MaskedPuzzleImage(imageName: flashcard.name,
                                               color: Color.blue,
                                               cellSize: 150,
                                               cornerRadius: 10,
@@ -107,7 +109,7 @@ struct ThreePiecePuzzle: View {
                         
                     }
                     
-                    CellView(imageName: "apple",
+					CellView(imageName: flashcard.name,
                              color: Color.blue,
                              cellSize: 300,
                              cornerRadius: 10,
@@ -123,7 +125,7 @@ struct ThreePiecePuzzle: View {
                             .rotationEffect(showStars ? .degrees(180) : .degrees(0))
                             .opacity(showStars ? 1 : 0)
                         
-                        Text("Apple")
+						Text(flashcard.name.capitalized)
                             .font(.system(size: 48))
                             .fontWeight(.heavy)
                             .opacity(showStars ? 1 : 0)
@@ -144,7 +146,10 @@ struct ThreePiecePuzzle: View {
 
 struct ThreePiecePuzzle_Previews: PreviewProvider {
     static var previews: some View {
-        ThreePiecePuzzle()
+		ThreePiecePuzzle(flashcard: Flashcard(name: "banana",
+											  ahapWave: "",
+											  ahapFile: "",
+										  syllables: 2))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

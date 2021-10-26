@@ -60,7 +60,7 @@ struct FindAndMatchView: View {
 
 struct FindAndMatchView_Previews: PreviewProvider {
     static var previews: some View {
-		FindAndMatchView(flashcard: Flashcard(name: "Banana", ahapWave: "", ahapFile: ""))
+		FindAndMatchView(flashcard: Flashcard(name: "Banana", ahapWave: "", ahapFile: "", syllables: 2))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -10,6 +10,8 @@ import SwiftUI
 struct FindAndMatchView: View {
     
 	let flashcard: Flashcard
+	let category: Category
+	let color: Color
 	
     @State private var images = [UIImage(), UIImage(), UIImage()]
     @State private var showSheets = [false, false, false]
@@ -21,9 +23,9 @@ struct FindAndMatchView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             ZStack{
-                
-                BackgroundView(imageName: "backgroundmixflashcard-market")
-                
+				
+				
+                BackgroundView(imageName: "backgroundmixfind-\(category)")
                 
                 VStack{
 					Text("You just learned \(flashcard.name).\n Now, find something that has the same:")
@@ -35,7 +37,7 @@ struct FindAndMatchView: View {
                     HStack(spacing: 28){
                         
                         ForEach(0..<images.count){ picImage in
-							PictureCell(image: images[picImage], text: formType[picImage])
+							PictureCell(image: images[picImage], text: formType[picImage], color: color)
                                 .scaleEffect(cellAnimation[picImage] ? 1.5 : 1)
                                 .animation(.spring())
                                 .onTapGesture {
@@ -60,7 +62,7 @@ struct FindAndMatchView: View {
 
 struct FindAndMatchView_Previews: PreviewProvider {
     static var previews: some View {
-		FindAndMatchView(flashcard: Flashcard(name: "Banana", ahapWave: "", ahapFile: "", syllables: 2))
+		FindAndMatchView(flashcard: Flashcard(name: "Banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market, color: .market)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
@@ -71,6 +73,7 @@ struct PictureCell: View {
 	
     let image: UIImage
 	let text: String
+	let color: Color
 	
     var body: some View {
         
@@ -89,7 +92,7 @@ struct PictureCell: View {
                     .foregroundColor(.white)
             }
             .frame(width: 200, height: 200)
-            .background(Color.blue)
+            .background(color)
             .cornerRadius(9)
             .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
             

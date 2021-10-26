@@ -10,7 +10,8 @@ import SwiftUI
 struct OnePiecePuzzle: View {
     
     let flashcard: Flashcard
-    
+	let category: Category
+	
     @State var leftPuzzleAnimation = false
     @State var showStars = false
     @State var scale: CGFloat = 1
@@ -19,7 +20,7 @@ struct OnePiecePuzzle: View {
         ZStack(alignment: .bottomLeading){
             ZStack(alignment: .bottomTrailing){
                 ZStack{
-                    BackgroundView(imageName: "backgroundpuzzle-market" )
+                    BackgroundView(imageName: "backgroundpuzzle-\(category)" )
                     
                     
                     HStack(spacing: 30) {
@@ -85,7 +86,7 @@ struct OnePiecePuzzle: View {
 
 struct OnePiecePuzzle_Previews: PreviewProvider {
     static var previews: some View {
-		OnePiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2))
+		OnePiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

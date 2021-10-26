@@ -45,12 +45,13 @@ struct FlashcardView: View {
 //
                     HStack(spacing: 70){
                         
-						NavigationLink(destination: FindAndMatchView(flashcard: flashcard)) {
+						NavigationLink(destination: FindAndMatchView(flashcard: flashcard,
+																	 category: category, color: color)) {
                             RoundedButton(sfSymbol: SFSymbols.photos,
                                           color: color)
                         }
                         
-						NavigationLink(destination: PuzzleViewS(syllables: 2, flashcard: flashcard)) {
+						NavigationLink(destination: PuzzleViewS(syllables: 2, flashcard: flashcard, category: category)) {
                             RoundedButton(sfSymbol: SFSymbols.puzzle,
                                           color: color)
                         }

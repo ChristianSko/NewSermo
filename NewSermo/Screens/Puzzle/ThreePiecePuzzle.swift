@@ -10,6 +10,7 @@ import SwiftUI
 struct ThreePiecePuzzle: View {
 	
 	let flashcard: Flashcard
+	let category: Category
     
     @State var trailingPuzzleAnimation = false
     @State var topLeadingPuzzleAnimation = false
@@ -22,7 +23,7 @@ struct ThreePiecePuzzle: View {
             ZStack(alignment: .bottomTrailing){
                 ZStack {
                     ZStack{
-                        BackgroundView(imageName: "backgroundpuzzle-market" )
+                        BackgroundView(imageName: "backgroundpuzzle-\(category)" )
                         
                         
                         HStack(spacing: 30) {
@@ -149,7 +150,7 @@ struct ThreePiecePuzzle_Previews: PreviewProvider {
 		ThreePiecePuzzle(flashcard: Flashcard(name: "banana",
 											  ahapWave: "",
 											  ahapFile: "",
-										  syllables: 2))
+											  syllables: 2), category: .market)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

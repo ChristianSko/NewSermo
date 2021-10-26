@@ -36,6 +36,7 @@ struct HomeView: View {
             }
             .navigationBarHidden(true)
         }
+		.accentColor(.black)
     }
 }
 

@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-enum Category {
-    case home
+enum Category: String {
+	case home
 	case park
 	case market
 }
@@ -160,6 +160,6 @@ struct Categories {
                                         .flashcard  : ImageAsset.backgroundParkFlashcard,
                                         .puzzle     : ImageAsset.backgroundParkPuzzle,
                                         .photo      : ImageAsset.backgroundParkPhoto],
-                          category: .park)
+						  category: .park)
 }
 

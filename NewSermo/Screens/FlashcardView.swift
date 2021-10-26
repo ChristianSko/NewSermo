@@ -19,7 +19,7 @@ struct FlashcardView: View {
     
     var body: some View {
         ZStack{
-            BackgroundView(imageName: ImageAsset.backgroundMarketFlashcard)
+            BackgroundView(imageName: "backgroundmixflashcard-\(category)")
         
             HStack{
 				Image(flashcard.name)

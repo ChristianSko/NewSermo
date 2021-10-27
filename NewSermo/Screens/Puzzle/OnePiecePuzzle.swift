@@ -11,6 +11,7 @@ struct OnePiecePuzzle: View {
     
     let flashcard: Flashcard
 	let category: Category
+	let color: Color
 	
     @State var leftPuzzleAnimation = false
     @State var showStars = false
@@ -25,7 +26,7 @@ struct OnePiecePuzzle: View {
                     
                     HStack(spacing: 30) {
 						CellView(imageName: flashcard.name,
-                                 color: Color.blue,
+                                 color: color,
                                  cellSize: 200,
                                  cornerRadius: 10,
                                  borderWidth: 10)
@@ -47,7 +48,7 @@ struct OnePiecePuzzle: View {
                         
                         ZStack {
                             CellView(imageName: flashcard.name,
-                                     color: Color.blue,
+                                     color: color,
                                      cellSize: 300,
                                      cornerRadius: 10,
                                      borderWidth: 10)
@@ -86,7 +87,7 @@ struct OnePiecePuzzle: View {
 
 struct OnePiecePuzzle_Previews: PreviewProvider {
     static var previews: some View {
-		OnePiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market)
+		OnePiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market, color: Color.home)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

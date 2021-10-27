@@ -12,14 +12,15 @@ struct PuzzleViewS: View {
     let syllables: Int
 	let flashcard: Flashcard
 	let category: Category
+	let color: Color
     
     var body: some View {
 		if flashcard.syllables == 1 {
-			OnePiecePuzzle(flashcard: flashcard, category: category)
+			OnePiecePuzzle(flashcard: flashcard, category: category, color: color)
 		} else if flashcard.syllables == 2 {
-			TwoPiecePuzzle(flashcard: flashcard, category: category)
+			TwoPiecePuzzle(flashcard: flashcard, category: category, color: color)
         } else {
-			ThreePiecePuzzle(flashcard: flashcard, category: category)
+			ThreePiecePuzzle(flashcard: flashcard, category: category, color: color)
         }
     }
 }
@@ -27,7 +28,7 @@ struct PuzzleViewS: View {
 struct PuzzleViewS_Previews: PreviewProvider {
     
     static var previews: some View {
-		PuzzleViewS(syllables: 1, flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market)
+		PuzzleViewS(syllables: 1, flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market, color: Color.market)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

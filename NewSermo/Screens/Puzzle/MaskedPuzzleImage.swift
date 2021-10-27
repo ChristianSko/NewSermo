@@ -22,7 +22,7 @@ struct MaskedPuzzleImage: View {
                 .frame(width: cellSize,
                        height: cellSize)
                 .aspectRatio(contentMode: .fit)
-                .border(Color.blue, width: borderWidth)
+                .border(color, width: borderWidth)
                 .cornerRadius(cornerRadius)
                 .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
                 .mask { Image(maskImageName) }

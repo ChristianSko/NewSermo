@@ -11,6 +11,7 @@ struct ThreePiecePuzzle: View {
 	
 	let flashcard: Flashcard
 	let category: Category
+	let color: Color
     
     @State var trailingPuzzleAnimation = false
     @State var topLeadingPuzzleAnimation = false
@@ -33,7 +34,7 @@ struct ThreePiecePuzzle: View {
                             
                             VStack {
 								MaskedPuzzleImage(imageName: flashcard.name,
-                                                  color: Color.blue,
+                                                  color: color,
                                                   cellSize: 150,
                                                   cornerRadius: 10,
                                                   borderWidth: 10,
@@ -54,7 +55,7 @@ struct ThreePiecePuzzle: View {
                                 
                                 
 								MaskedPuzzleImage(imageName: flashcard.name,
-                                                  color: Color.blue,
+                                                  color: color,
                                                   cellSize: 150,
                                                   cornerRadius: 10,
                                                   borderWidth: 10,
@@ -87,7 +88,7 @@ struct ThreePiecePuzzle: View {
                             
                             
 							MaskedPuzzleImage(imageName: flashcard.name,
-                                              color: Color.blue,
+                                              color: color,
                                               cellSize: 150,
                                               cornerRadius: 10,
                                               borderWidth: 10,
@@ -111,7 +112,7 @@ struct ThreePiecePuzzle: View {
                     }
                     
 					CellView(imageName: flashcard.name,
-                             color: Color.blue,
+                             color: color,
                              cellSize: 300,
                              cornerRadius: 10,
                              borderWidth: 10)
@@ -150,7 +151,7 @@ struct ThreePiecePuzzle_Previews: PreviewProvider {
 		ThreePiecePuzzle(flashcard: Flashcard(name: "banana",
 											  ahapWave: "",
 											  ahapFile: "",
-											  syllables: 2), category: .market)
+											  syllables: 2), category: .market, color: .market)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

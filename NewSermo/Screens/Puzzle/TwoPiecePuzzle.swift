@@ -11,6 +11,7 @@ struct TwoPiecePuzzle: View {
     
 	let flashcard: Flashcard
 	let category: Category
+	let color: Color
 	
     @State var rightPuzzleAnimation = false
     @State var leftPuzzleAnimation = false
@@ -28,7 +29,7 @@ struct TwoPiecePuzzle: View {
                             
                             
 							MaskedPuzzleImage(imageName: flashcard.name,
-                                              color: Color.blue,
+                                              color: color,
                                               cellSize: 200,
                                               cornerRadius: 10,
                                               borderWidth: 10,
@@ -53,7 +54,7 @@ struct TwoPiecePuzzle: View {
                                                                                     
                             
 							MaskedPuzzleImage(imageName: flashcard.name,
-                                              color: Color.blue,
+                                              color: color,
                                               cellSize: 200,
                                               cornerRadius: 10,
                                               borderWidth: 10,
@@ -77,7 +78,7 @@ struct TwoPiecePuzzle: View {
                     }
                     
                     CellView(imageName: flashcard.name,
-                             color: Color.blue,
+                             color: color,
                              cellSize: 300,
                              cornerRadius: 10,
                              borderWidth: 10)
@@ -113,7 +114,7 @@ struct TwoPiecePuzzle: View {
 
 struct PuzzleView_Previews: PreviewProvider {
     static var previews: some View {
-		TwoPiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market)
+		TwoPiecePuzzle(flashcard: Flashcard(name: "banana", ahapWave: "", ahapFile: "", syllables: 2), category: .market, color: .market)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

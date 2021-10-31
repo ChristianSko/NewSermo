@@ -58,6 +58,29 @@ extension Color {
 }
 
 
+enum AlertText {
+	static let excerciseTitle = "Parent Zone!"
+	
+	
+	static let findExercise = """
+  Take this time to explore more characteristics and descriptive words that can be used to categorize the word on the flashcard. This search and find activity provides you and your child with the opportunity to communicate and create a narrative around the word you just learned together. 
+
+  Talk through why certain objects have the same characteristics and why they don’t and try to incorporate other words that you may have learned recently with your child.
+  
+  Encourage creativity and help him/her observe your environment by talking about what you discover together. Create stories with the elements and objects that you find during your hunt. Remember that every moment is a teachable moment and to raise curiosity in learning new words!
+  
+  """
+	
+	static let puzzleExcercise = """
+  The puzzle activity here can be used to help break up and slow down a word for better comprehension.
+  
+  Make sure your child is holding the phone to ensure that they feel the vibrotactile representation of the word.
+  
+  Remember that repition is an important part of learning a new word. It never hurts to revisit a word for extra verification!
+  """
+}
+
+
 // MARK: -SF SYMBOLS STRINGS
 enum SFSymbols {
     

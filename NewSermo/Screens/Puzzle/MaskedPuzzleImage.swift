@@ -32,7 +32,7 @@ struct MaskedPuzzleImage: View {
 struct MaskedPuzzleImage_Previews: PreviewProvider {
     static var previews: some View {
         MaskedPuzzleImage(imageName: "apple",
-                          color: Color.blue,
+                          color: Color.market,
                           cellSize: 200,
                           cornerRadius: 10,
                           borderWidth: 10,

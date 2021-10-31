@@ -10,6 +10,7 @@
 		D611041D26FBD81800B40555 /* OnePiecePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */; };
 		D61CA51327027338003255E9 /* ThreePiecePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CA51227027338003255E9 /* ThreePiecePuzzle.swift */; };
 		D61CA51527037B28003255E9 /* PuzzleViewS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CA51427037B28003255E9 /* PuzzleViewS.swift */; };
+		D6474F96272DDD7A00E98EE1 /* MoreInfoAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6474F95272DDD7A00E98EE1 /* MoreInfoAlertView.swift */; };
 		D65A266226EE9C7200D11021 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266126EE9C7200D11021 /* Onboarding.swift */; };
 		D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */; };
 		D65A266726EE9EE500D11021 /* FinalOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */; };
@@ -40,6 +41,7 @@
 		D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePiecePuzzle.swift; sourceTree = "<group>"; };
 		D61CA51227027338003255E9 /* ThreePiecePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePiecePuzzle.swift; sourceTree = "<group>"; };
 		D61CA51427037B28003255E9 /* PuzzleViewS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewS.swift; sourceTree = "<group>"; };
+		D6474F95272DDD7A00E98EE1 /* MoreInfoAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoAlertView.swift; sourceTree = "<group>"; };
 		D65A266126EE9C7200D11021 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		D65A266426EE9EDB00D11021 /* InitialOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialOnboardingView.swift; sourceTree = "<group>"; };
 		D65A266626EE9EE500D11021 /* FinalOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOnboardingView.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				D6603CB126EB505C005AB1E5 /* BackgroundView.swift */,
+				D6474F95272DDD7A00E98EE1 /* MoreInfoAlertView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				D6603C9D26EA60DB005AB1E5 /* HomeView.swift in Sources */,
 				D67E616426F8F4B800A7AC40 /* ImagePicker.swift in Sources */,
 				D67E60F026F62D7300A7AC40 /* InfoButton.swift in Sources */,
+				D6474F96272DDD7A00E98EE1 /* MoreInfoAlertView.swift in Sources */,
 				D67E60F826F7E7D600A7AC40 /* WordButton.swift in Sources */,
 				D65A266526EE9EDB00D11021 /* InitialOnboardingView.swift in Sources */,
 				D61CA51527037B28003255E9 /* PuzzleViewS.swift in Sources */,

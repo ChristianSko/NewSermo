@@ -91,7 +91,7 @@ struct OnePiecePuzzle: View {
 			}
 			
 			if showInfo {
-				MoreInfoAlertView(dismiss: $showInfo)
+				MoreInfoAlertView(text: AlertText.puzzleExcercise, dismiss: $showInfo)
 			}
 		}
     }

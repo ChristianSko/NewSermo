@@ -17,46 +17,55 @@ struct FindAndMatchView: View {
     @State private var showSheets = [false, false, false]
     @State private var cellAnimation = [false, false, false]
 	@State private var formType = ["SHAPE", "COLOR", "TEXTURE"]
+	@State var showInfo = false
     
     //TODO: - Add ImagePicker Info.plist privacy request
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing){
-            ZStack{
-				
-				
-                BackgroundView(imageName: "backgroundmixfind-\(category)")
-                
-                VStack{
-					Text("You just learned \(flashcard.name).\n Now, find something that has the same:")
-                        .font(.title)
-                        .foregroundColor(.black)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                    
-                    HStack(spacing: 28){
-                        
-                        ForEach(0..<images.count){ picImage in
-							PictureCell(image: images[picImage], text: formType[picImage], color: color)
-                                .scaleEffect(cellAnimation[picImage] ? 1.5 : 1)
-                                .animation(.spring())
-                                .onTapGesture {
-                                    cellAnimation[picImage].toggle()
-                                    showSheets[picImage] = true
-                                    cellAnimation[picImage].toggle()
-                                }
-                                .sheet(isPresented: $showSheets[picImage]) {
-                                    ImagePicker(sourceType: .photoLibrary, selectedImage: $images[picImage])
-                                }
-                        }
-                    }
-                }
-                .offset(x: -20, y: -40)
-                
-            }
-            InfoButton(action: {print("OK")})
-        }
-        
+		ZStack {
+			ZStack(alignment: .bottomTrailing){
+				ZStack{
+					
+					
+					BackgroundView(imageName: "backgroundmixfind-\(category)")
+					
+					VStack{
+						Text("You just learned \(flashcard.name.uppercased()).\n Now, find something that has the same:")
+							.font(.title)
+							.foregroundColor(.black)
+							.multilineTextAlignment(.center)
+							.padding()
+						
+						HStack(spacing: 28){
+							
+							ForEach(0..<images.count){ picImage in
+								PictureCell(image: images[picImage], text: formType[picImage], color: color)
+									.scaleEffect(cellAnimation[picImage] ? 1.5 : 1)
+									.animation(.spring())
+									.onTapGesture {
+										cellAnimation[picImage].toggle()
+										showSheets[picImage] = true
+										cellAnimation[picImage].toggle()
+									}
+									.sheet(isPresented: $showSheets[picImage]) {
+										ImagePicker(sourceType: .photoLibrary, selectedImage: $images[picImage])
+									}
+							}
+						}
+					}
+					.offset(x: -20, y: -40)
+					
+				}
+				InfoButton(action: {
+					withAnimation(.easeOut) {
+						showInfo.toggle()
+					}
+				})
+			}
+			if showInfo {
+				MoreInfoAlertView(text: AlertText.findExercise, dismiss: $showInfo)
+			}
+		}
     }
 }
 

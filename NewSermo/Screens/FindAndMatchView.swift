@@ -30,11 +30,20 @@ struct FindAndMatchView: View {
 					BackgroundView(imageName: "backgroundmixfind-\(category)")
 					
 					VStack{
-						Text("You just learned \(flashcard.name.uppercased()).\n Now, find something that has the same:")
-							.font(.title)
-							.foregroundColor(.black)
-							.multilineTextAlignment(.center)
-							.padding()
+						Group{
+						
+							Text("You just learned ")
+							+
+							Text("**\(flashcard.name.uppercased())**\n")
+								.underline()
+							+
+							Text("Now, find something that has the same:")
+
+						}
+						.font(.title)
+						.foregroundColor(.black)
+						.multilineTextAlignment(.center)
+						.padding()
 						
 						HStack(spacing: 28){
 							

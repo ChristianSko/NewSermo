@@ -34,10 +34,10 @@ struct FindAndMatchView: View {
 						
 							Text("You just learned ")
 							+
-							Text("**\(flashcard.name.uppercased())**\n")
+							Text("**\(flashcard.name.uppercased())**")
 								.underline()
 							+
-							Text("Now, find something that has the same:")
+							Text(".\nNow, find something that has the same:")
 
 						}
 						.font(.title)

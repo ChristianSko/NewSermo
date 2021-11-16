@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreHaptics
+import AVFoundation
 
 struct FlashcardView: View {
     
@@ -16,6 +17,8 @@ struct FlashcardView: View {
     
     @State private var engine: CHHapticEngine?
     @State var wordButtonAnimation = false
+	@GestureState var press = false
+	
     
     var body: some View {
         ZStack{
@@ -34,15 +37,36 @@ struct FlashcardView: View {
                 
                 VStack(alignment: .center, spacing: 50){
         
-					WordButton(word: flashcard.name.uppercased(),
-                               color: color,
-                               press: wordButtonAnimation) {
-                        wordButtonAnimation.toggle()
-                    }
-                    
-//                    .onAppear(perform: prepareHaptics)
-//                    .onTapGesture(perform: complexSuccess)
+//					WordButton(word: flashcard.name.uppercased(),
+//                               color: color,
+//                               press: wordButtonAnimation) {
 //
+//                    }
+//					
+					
+					Button(action: {print("ok")}) {
+						Text(flashcard.name)
+							.font(.title)
+							.frame(width: 240, height: 50)
+							.foregroundColor(.white)
+							.background(color)
+							.clipShape(Capsule())
+							.shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
+							.scaleEffect(press ? 1.5 : 1)
+							.animation(.spring())
+							.onAppear(perform: prepareHaptics)
+							.onTapGesture {
+								HapticEngine.shared.playHapticsFile(name: "AHAP/walk")
+							}
+							.gesture(
+								LongPressGesture().updating($press) { currenState, gestureState, transaction in
+									gestureState = currenState
+
+								}
+							)
+					}
+					
+                    
                     HStack(spacing: 70){
                         
 						NavigationLink(destination: FindAndMatchView(flashcard: flashcard,

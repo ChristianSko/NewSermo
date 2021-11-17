@@ -44,13 +44,15 @@ class HapticEngine: ObservableObject {
 			engine.stoppedHandler = { reason in
 				print("The engine stopped for reason: \(reason.rawValue)")
 				switch reason {
-				case .audioSessionInterrupt: print("Audio session interrupt")
-				case .applicationSuspended: print("Application suspended")
-				case .idleTimeout: print("Idle timeout")
-				case .systemError: print("System error")
-				case .notifyWhenFinished: print("Playback finished")
-				@unknown default:
-					print("Unknown error")
+					case .audioSessionInterrupt: 	print("Audio session interrupt")
+					case .applicationSuspended: 	print("Application suspended")
+					case .idleTimeout: 				print("Idle timeout")
+					case .systemError: 				print("System error")
+					case .notifyWhenFinished: 		print("Playback finished")
+					case .engineDestroyed: 			print("engineDestroyed")
+					case .gameControllerDisconnect: print("gameControllerDisconnect")
+					@unknown default:
+						print("Unknown error")
 				}
 			}
 			

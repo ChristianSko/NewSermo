@@ -11,6 +11,7 @@ struct FinalOnboardingView: View {
     
     let imageName: String
     @Binding var onBoardingState: Bool
+	@State var wordButtonAnimation = false
     
     var body: some View {
         ZStack{
@@ -31,15 +32,34 @@ struct FinalOnboardingView: View {
                 Button(action: {
                     print("wall-button")
                 }, label: {
-                    Image("wall-button")
-                        .padding(20)
+					ZStack {
+						Color
+							.white
+							.frame(width: 250, height: 60)
+							.cornerRadius(10)
+						
+						WordButton(word: "wall",
+								   color: .green,
+								   press: wordButtonAnimation)
+							.padding(30)
+					}
                 })
                 
                 Button(action: {
                     print("walk-button")
                 }, label: {
-                    Image("walk-button")
-                        .padding(20)
+					
+					ZStack {
+						Color
+							.white
+							.frame(width: 250, height: 60)
+							.cornerRadius(10)
+						
+						WordButton(word: "walk",
+								   color: .green,
+								   press: wordButtonAnimation)
+							.padding(30)
+					}
                 })
             }
         }

@@ -7,106 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D609BC3D27441E8E00FA96DA /* cookie.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBD927441E8E00FA96DA /* cookie.wav */; };
-		D609BC3E27441E8E00FA96DA /* pillow-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBDA27441E8E00FA96DA /* pillow-s2.ahap */; };
-		D609BC3F27441E8E00FA96DA /* kiwi-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBDB27441E8E00FA96DA /* kiwi-s2.ahap */; };
-		D609BC4027441E8E00FA96DA /* dinner.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBDC27441E8E00FA96DA /* dinner.ahap */; };
-		D609BC4127441E8E00FA96DA /* dinner.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBDD27441E8E00FA96DA /* dinner.wav */; };
-		D609BC4227441E8E00FA96DA /* spaghetti-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBDE27441E8E00FA96DA /* spaghetti-s1.wav */; };
-		D609BC4327441E8E00FA96DA /* pillow-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBDF27441E8E00FA96DA /* pillow-s1.wav */; };
-		D609BC4427441E8E00FA96DA /* bedroom-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE027441E8E00FA96DA /* bedroom-s1.ahap */; };
-		D609BC4527441E8E00FA96DA /* window.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE127441E8E00FA96DA /* window.ahap */; };
-		D609BC4627441E8E00FA96DA /* garden-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE227441E8E00FA96DA /* garden-s2.ahap */; };
-		D609BC4727441E8E00FA96DA /* eggs.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE327441E8E00FA96DA /* eggs.wav */; };
-		D609BC4827441E8E00FA96DA /* apple-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE427441E8E00FA96DA /* apple-s2.ahap */; };
-		D609BC4927441E8E00FA96DA /* banana-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE527441E8E00FA96DA /* banana-s1.ahap */; };
-		D609BC4A27441E8E00FA96DA /* spaghetti-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE627441E8E00FA96DA /* spaghetti-s2.wav */; };
-		D609BC4B27441E8E00FA96DA /* pillow-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE727441E8E00FA96DA /* pillow-s2.wav */; };
-		D609BC4C27441E8E00FA96DA /* spaghetti-s3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE827441E8E00FA96DA /* spaghetti-s3.wav */; };
-		D609BC4D27441E8E00FA96DA /* window-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBE927441E8E00FA96DA /* window-s1.ahap */; };
-		D609BC4E27441E8E00FA96DA /* playground-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBEA27441E8E00FA96DA /* playground-s2.ahap */; };
-		D609BC4F27441E8E00FA96DA /* spaghetti.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBEB27441E8E00FA96DA /* spaghetti.wav */; };
-		D609BC5027441E8E00FA96DA /* pillow.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBEC27441E8E00FA96DA /* pillow.ahap */; };
-		D609BC5127441E8E00FA96DA /* flower-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBED27441E8E00FA96DA /* flower-s2.ahap */; };
-		D609BC5227441E8E00FA96DA /* fork.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBEE27441E8E00FA96DA /* fork.ahap */; };
-		D609BC5327441E8E00FA96DA /* pillow.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBEF27441E8E00FA96DA /* pillow.wav */; };
-		D609BC5427441E8E00FA96DA /* duck.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF027441E8E00FA96DA /* duck.wav */; };
-		D609BC5527441E8E00FA96DA /* spoon.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF127441E8E00FA96DA /* spoon.wav */; };
-		D609BC5627441E8E00FA96DA /* table.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF227441E8E00FA96DA /* table.ahap */; };
-		D609BC5727441E8E00FA96DA /* spoon.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF327441E8E00FA96DA /* spoon.ahap */; };
-		D609BC5827441E8E00FA96DA /* banana-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF427441E8E00FA96DA /* banana-s1.wav */; };
-		D609BC5927441E8E00FA96DA /* bench.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF527441E8E00FA96DA /* bench.wav */; };
-		D609BC5A27441E8E00FA96DA /* dinner-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF627441E8E00FA96DA /* dinner-s2.wav */; };
-		D609BC5B27441E8E00FA96DA /* dinner-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF727441E8E00FA96DA /* dinner-s2.ahap */; };
-		D609BC5C27441E8E00FA96DA /* kiwi.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF827441E8E00FA96DA /* kiwi.ahap */; };
-		D609BC5D27441E8E00FA96DA /* spaghetti-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBF927441E8E00FA96DA /* spaghetti-s1.ahap */; };
-		D609BC5E27441E8E00FA96DA /* bedroom.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBFA27441E8E00FA96DA /* bedroom.wav */; };
-		D609BC5F27441E8E00FA96DA /* banana-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBFB27441E8E00FA96DA /* banana-s2.wav */; };
-		D609BC6027441E8E00FA96DA /* dinner-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBFC27441E8E00FA96DA /* dinner-s1.wav */; };
-		D609BC6127441E8E00FA96DA /* cookie-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBFD27441E8E00FA96DA /* cookie-s2.ahap */; };
-		D609BC6227441E8E00FA96DA /* banana-s3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BBFE27441E8E00FA96DA /* banana-s3.wav */; };
-		D609BC6327441E8E00FA96DA /* table-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BBFF27441E8E00FA96DA /* table-s2.ahap */; };
-		D609BC6427441E8E00FA96DA /* cookie-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0027441E8E00FA96DA /* cookie-s1.wav */; };
-		D609BC6527441E8E00FA96DA /* flower-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0127441E8E00FA96DA /* flower-s2.wav */; };
-		D609BC6627441E8E00FA96DA /* apple-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0227441E8E00FA96DA /* apple-s2.wav */; };
-		D609BC6727441E8E00FA96DA /* cookie-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0327441E8E00FA96DA /* cookie-s1.ahap */; };
-		D609BC6827441E8E00FA96DA /* bedroom.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0427441E8E00FA96DA /* bedroom.ahap */; };
-		D609BC6927441E8E00FA96DA /* table-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0527441E8E00FA96DA /* table-s1.ahap */; };
-		D609BC6A27441E8E00FA96DA /* banana.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0627441E8E00FA96DA /* banana.wav */; };
-		D609BC6B27441E8E00FA96DA /* bench.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0727441E8E00FA96DA /* bench.ahap */; };
-		D609BC6C27441E8E00FA96DA /* cookie-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0827441E8E00FA96DA /* cookie-s2.wav */; };
-		D609BC6D27441E8E00FA96DA /* dinner-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0927441E8E00FA96DA /* dinner-s1.ahap */; };
-		D609BC6E27441E8E00FA96DA /* flower-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0A27441E8E00FA96DA /* flower-s1.wav */; };
-		D609BC6F27441E8E00FA96DA /* apple-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0B27441E8E00FA96DA /* apple-s1.wav */; };
-		D609BC7027441E8E00FA96DA /* spaghetti-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0C27441E8E00FA96DA /* spaghetti-s2.ahap */; };
-		D609BC7127441E8E00FA96DA /* spaghetti-s3.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0D27441E8E00FA96DA /* spaghetti-s3.ahap */; };
-		D609BC7227441E8E00FA96DA /* fish.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0E27441E8E00FA96DA /* fish.wav */; };
-		D609BC7327441E8E00FA96DA /* fork.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC0F27441E8E00FA96DA /* fork.wav */; };
-		D609BC7427441E8E00FA96DA /* table-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1027441E8E00FA96DA /* table-s2.wav */; };
-		D609BC7527441E8E00FA96DA /* kiwi.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1127441E8E00FA96DA /* kiwi.wav */; };
-		D609BC7627441E8E00FA96DA /* window-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1227441E8E00FA96DA /* window-s2.ahap */; };
-		D609BC7727441E8E00FA96DA /* wall.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1327441E8E00FA96DA /* wall.ahap */; };
-		D609BC7827441E8E00FA96DA /* playground-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1427441E8E00FA96DA /* playground-s1.ahap */; };
-		D609BC7927441E8E00FA96DA /* fish.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1527441E8E00FA96DA /* fish.ahap */; };
-		D609BC7A27441E8E00FA96DA /* eggs.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1627441E8E00FA96DA /* eggs.ahap */; };
-		D609BC7B27441E8E00FA96DA /* garden.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1727441E8E00FA96DA /* garden.ahap */; };
-		D609BC7C27441E8E00FA96DA /* table-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1827441E8E00FA96DA /* table-s1.wav */; };
-		D609BC7D27441E8E00FA96DA /* flower-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1927441E8E00FA96DA /* flower-s1.ahap */; };
-		D609BC7E27441E8E00FA96DA /* table.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1A27441E8E00FA96DA /* table.wav */; };
-		D609BC7F27441E8E00FA96DA /* banana-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1B27441E8E00FA96DA /* banana-s2.ahap */; };
-		D609BC8027441E8E00FA96DA /* window.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1C27441E8E00FA96DA /* window.wav */; };
-		D609BC8127441E8E00FA96DA /* walk.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1D27441E8E00FA96DA /* walk.wav */; };
-		D609BC8227441E8E00FA96DA /* duck.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1E27441E8E00FA96DA /* duck.ahap */; };
-		D609BC8327441E8E00FA96DA /* playground-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC1F27441E8E00FA96DA /* playground-s1.wav */; };
-		D609BC8427441E8E00FA96DA /* bedroom-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2027441E8E00FA96DA /* bedroom-s2.wav */; };
-		D609BC8527441E8E00FA96DA /* garden.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2127441E8E00FA96DA /* garden.wav */; };
-		D609BC8627441E8E00FA96DA /* apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2227441E8E00FA96DA /* apple.wav */; };
-		D609BC8727441E8E00FA96DA /* grass.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2327441E8E00FA96DA /* grass.ahap */; };
-		D609BC8827441E8E00FA96DA /* grass.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2427441E8E00FA96DA /* grass.wav */; };
-		D609BC8927441E8E00FA96DA /* cookie.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2527441E8E00FA96DA /* cookie.ahap */; };
-		D609BC8A27441E8E00FA96DA /* banana.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2627441E8E00FA96DA /* banana.ahap */; };
-		D609BC8B27441E8E00FA96DA /* bedroom-s2.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2727441E8E00FA96DA /* bedroom-s2.ahap */; };
-		D609BC8C27441E8E00FA96DA /* playground-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2827441E8E00FA96DA /* playground-s2.wav */; };
-		D609BC8D27441E8E00FA96DA /* garden-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2927441E8E00FA96DA /* garden-s1.ahap */; };
-		D609BC8E27441E8E00FA96DA /* flower.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2A27441E8E00FA96DA /* flower.ahap */; };
-		D609BC8F27441E8E00FA96DA /* bedroom-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2B27441E8E00FA96DA /* bedroom-s1.wav */; };
-		D609BC9027441E8E00FA96DA /* apple-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2C27441E8E00FA96DA /* apple-s1.ahap */; };
-		D609BC9127441E8E00FA96DA /* walk.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2D27441E8E00FA96DA /* walk.ahap */; };
-		D609BC9227441E8E00FA96DA /* kiwi-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2E27441E8E00FA96DA /* kiwi-s2.wav */; };
-		D609BC9327441E8E00FA96DA /* garden-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC2F27441E8E00FA96DA /* garden-s1.wav */; };
-		D609BC9427441E8E00FA96DA /* wall.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3027441E8E00FA96DA /* wall.wav */; };
-		D609BC9527441E8E00FA96DA /* window-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3127441E8E00FA96DA /* window-s2.wav */; };
-		D609BC9627441E8E00FA96DA /* apple.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3227441E8E00FA96DA /* apple.ahap */; };
-		D609BC9727441E8E00FA96DA /* playground.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3327441E8E00FA96DA /* playground.ahap */; };
-		D609BC9827441E8E00FA96DA /* flower.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3427441E8E00FA96DA /* flower.wav */; };
-		D609BC9927441E8E00FA96DA /* kiwi-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3527441E8E00FA96DA /* kiwi-s1.wav */; };
-		D609BC9A27441E8E00FA96DA /* garden-s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3627441E8E00FA96DA /* garden-s2.wav */; };
-		D609BC9B27441E8E00FA96DA /* spaghetti.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3727441E8E00FA96DA /* spaghetti.ahap */; };
-		D609BC9C27441E8E00FA96DA /* window-s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3827441E8E00FA96DA /* window-s1.wav */; };
-		D609BC9D27441E8E00FA96DA /* playground.wav in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3927441E8E00FA96DA /* playground.wav */; };
-		D609BC9E27441E8E00FA96DA /* pillow-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3A27441E8E00FA96DA /* pillow-s1.ahap */; };
-		D609BC9F27441E8E00FA96DA /* kiwi-s1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3B27441E8E00FA96DA /* kiwi-s1.ahap */; };
-		D609BCA027441E8E00FA96DA /* banana-s3.ahap in Resources */ = {isa = PBXBuildFile; fileRef = D609BC3C27441E8E00FA96DA /* banana-s3.ahap */; };
 		D611041D26FBD81800B40555 /* OnePiecePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */; };
 		D61CA51327027338003255E9 /* ThreePiecePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CA51227027338003255E9 /* ThreePiecePuzzle.swift */; };
 		D61CA51527037B28003255E9 /* PuzzleViewS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61CA51427037B28003255E9 /* PuzzleViewS.swift */; };
@@ -140,106 +40,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D609BBD927441E8E00FA96DA /* cookie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cookie.wav; sourceTree = "<group>"; };
-		D609BBDA27441E8E00FA96DA /* pillow-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pillow-s2.ahap"; sourceTree = "<group>"; };
-		D609BBDB27441E8E00FA96DA /* kiwi-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "kiwi-s2.ahap"; sourceTree = "<group>"; };
-		D609BBDC27441E8E00FA96DA /* dinner.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dinner.ahap; sourceTree = "<group>"; };
-		D609BBDD27441E8E00FA96DA /* dinner.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dinner.wav; sourceTree = "<group>"; };
-		D609BBDE27441E8E00FA96DA /* spaghetti-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "spaghetti-s1.wav"; sourceTree = "<group>"; };
-		D609BBDF27441E8E00FA96DA /* pillow-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pillow-s1.wav"; sourceTree = "<group>"; };
-		D609BBE027441E8E00FA96DA /* bedroom-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bedroom-s1.ahap"; sourceTree = "<group>"; };
-		D609BBE127441E8E00FA96DA /* window.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = window.ahap; sourceTree = "<group>"; };
-		D609BBE227441E8E00FA96DA /* garden-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "garden-s2.ahap"; sourceTree = "<group>"; };
-		D609BBE327441E8E00FA96DA /* eggs.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = eggs.wav; sourceTree = "<group>"; };
-		D609BBE427441E8E00FA96DA /* apple-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "apple-s2.ahap"; sourceTree = "<group>"; };
-		D609BBE527441E8E00FA96DA /* banana-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "banana-s1.ahap"; sourceTree = "<group>"; };
-		D609BBE627441E8E00FA96DA /* spaghetti-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "spaghetti-s2.wav"; sourceTree = "<group>"; };
-		D609BBE727441E8E00FA96DA /* pillow-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pillow-s2.wav"; sourceTree = "<group>"; };
-		D609BBE827441E8E00FA96DA /* spaghetti-s3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "spaghetti-s3.wav"; sourceTree = "<group>"; };
-		D609BBE927441E8E00FA96DA /* window-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "window-s1.ahap"; sourceTree = "<group>"; };
-		D609BBEA27441E8E00FA96DA /* playground-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "playground-s2.ahap"; sourceTree = "<group>"; };
-		D609BBEB27441E8E00FA96DA /* spaghetti.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spaghetti.wav; sourceTree = "<group>"; };
-		D609BBEC27441E8E00FA96DA /* pillow.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pillow.ahap; sourceTree = "<group>"; };
-		D609BBED27441E8E00FA96DA /* flower-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "flower-s2.ahap"; sourceTree = "<group>"; };
-		D609BBEE27441E8E00FA96DA /* fork.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fork.ahap; sourceTree = "<group>"; };
-		D609BBEF27441E8E00FA96DA /* pillow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pillow.wav; sourceTree = "<group>"; };
-		D609BBF027441E8E00FA96DA /* duck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = duck.wav; sourceTree = "<group>"; };
-		D609BBF127441E8E00FA96DA /* spoon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spoon.wav; sourceTree = "<group>"; };
-		D609BBF227441E8E00FA96DA /* table.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = table.ahap; sourceTree = "<group>"; };
-		D609BBF327441E8E00FA96DA /* spoon.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spoon.ahap; sourceTree = "<group>"; };
-		D609BBF427441E8E00FA96DA /* banana-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banana-s1.wav"; sourceTree = "<group>"; };
-		D609BBF527441E8E00FA96DA /* bench.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bench.wav; sourceTree = "<group>"; };
-		D609BBF627441E8E00FA96DA /* dinner-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "dinner-s2.wav"; sourceTree = "<group>"; };
-		D609BBF727441E8E00FA96DA /* dinner-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dinner-s2.ahap"; sourceTree = "<group>"; };
-		D609BBF827441E8E00FA96DA /* kiwi.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kiwi.ahap; sourceTree = "<group>"; };
-		D609BBF927441E8E00FA96DA /* spaghetti-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "spaghetti-s1.ahap"; sourceTree = "<group>"; };
-		D609BBFA27441E8E00FA96DA /* bedroom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bedroom.wav; sourceTree = "<group>"; };
-		D609BBFB27441E8E00FA96DA /* banana-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banana-s2.wav"; sourceTree = "<group>"; };
-		D609BBFC27441E8E00FA96DA /* dinner-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "dinner-s1.wav"; sourceTree = "<group>"; };
-		D609BBFD27441E8E00FA96DA /* cookie-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cookie-s2.ahap"; sourceTree = "<group>"; };
-		D609BBFE27441E8E00FA96DA /* banana-s3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banana-s3.wav"; sourceTree = "<group>"; };
-		D609BBFF27441E8E00FA96DA /* table-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "table-s2.ahap"; sourceTree = "<group>"; };
-		D609BC0027441E8E00FA96DA /* cookie-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cookie-s1.wav"; sourceTree = "<group>"; };
-		D609BC0127441E8E00FA96DA /* flower-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "flower-s2.wav"; sourceTree = "<group>"; };
-		D609BC0227441E8E00FA96DA /* apple-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "apple-s2.wav"; sourceTree = "<group>"; };
-		D609BC0327441E8E00FA96DA /* cookie-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cookie-s1.ahap"; sourceTree = "<group>"; };
-		D609BC0427441E8E00FA96DA /* bedroom.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bedroom.ahap; sourceTree = "<group>"; };
-		D609BC0527441E8E00FA96DA /* table-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "table-s1.ahap"; sourceTree = "<group>"; };
-		D609BC0627441E8E00FA96DA /* banana.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = banana.wav; sourceTree = "<group>"; };
-		D609BC0727441E8E00FA96DA /* bench.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bench.ahap; sourceTree = "<group>"; };
-		D609BC0827441E8E00FA96DA /* cookie-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cookie-s2.wav"; sourceTree = "<group>"; };
-		D609BC0927441E8E00FA96DA /* dinner-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dinner-s1.ahap"; sourceTree = "<group>"; };
-		D609BC0A27441E8E00FA96DA /* flower-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "flower-s1.wav"; sourceTree = "<group>"; };
-		D609BC0B27441E8E00FA96DA /* apple-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "apple-s1.wav"; sourceTree = "<group>"; };
-		D609BC0C27441E8E00FA96DA /* spaghetti-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "spaghetti-s2.ahap"; sourceTree = "<group>"; };
-		D609BC0D27441E8E00FA96DA /* spaghetti-s3.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "spaghetti-s3.ahap"; sourceTree = "<group>"; };
-		D609BC0E27441E8E00FA96DA /* fish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fish.wav; sourceTree = "<group>"; };
-		D609BC0F27441E8E00FA96DA /* fork.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fork.wav; sourceTree = "<group>"; };
-		D609BC1027441E8E00FA96DA /* table-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "table-s2.wav"; sourceTree = "<group>"; };
-		D609BC1127441E8E00FA96DA /* kiwi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kiwi.wav; sourceTree = "<group>"; };
-		D609BC1227441E8E00FA96DA /* window-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "window-s2.ahap"; sourceTree = "<group>"; };
-		D609BC1327441E8E00FA96DA /* wall.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall.ahap; sourceTree = "<group>"; };
-		D609BC1427441E8E00FA96DA /* playground-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "playground-s1.ahap"; sourceTree = "<group>"; };
-		D609BC1527441E8E00FA96DA /* fish.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fish.ahap; sourceTree = "<group>"; };
-		D609BC1627441E8E00FA96DA /* eggs.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eggs.ahap; sourceTree = "<group>"; };
-		D609BC1727441E8E00FA96DA /* garden.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = garden.ahap; sourceTree = "<group>"; };
-		D609BC1827441E8E00FA96DA /* table-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "table-s1.wav"; sourceTree = "<group>"; };
-		D609BC1927441E8E00FA96DA /* flower-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "flower-s1.ahap"; sourceTree = "<group>"; };
-		D609BC1A27441E8E00FA96DA /* table.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = table.wav; sourceTree = "<group>"; };
-		D609BC1B27441E8E00FA96DA /* banana-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "banana-s2.ahap"; sourceTree = "<group>"; };
-		D609BC1C27441E8E00FA96DA /* window.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = window.wav; sourceTree = "<group>"; };
-		D609BC1D27441E8E00FA96DA /* walk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = walk.wav; sourceTree = "<group>"; };
-		D609BC1E27441E8E00FA96DA /* duck.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duck.ahap; sourceTree = "<group>"; };
-		D609BC1F27441E8E00FA96DA /* playground-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "playground-s1.wav"; sourceTree = "<group>"; };
-		D609BC2027441E8E00FA96DA /* bedroom-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bedroom-s2.wav"; sourceTree = "<group>"; };
-		D609BC2127441E8E00FA96DA /* garden.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = garden.wav; sourceTree = "<group>"; };
-		D609BC2227441E8E00FA96DA /* apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = apple.wav; sourceTree = "<group>"; };
-		D609BC2327441E8E00FA96DA /* grass.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grass.ahap; sourceTree = "<group>"; };
-		D609BC2427441E8E00FA96DA /* grass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = grass.wav; sourceTree = "<group>"; };
-		D609BC2527441E8E00FA96DA /* cookie.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cookie.ahap; sourceTree = "<group>"; };
-		D609BC2627441E8E00FA96DA /* banana.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = banana.ahap; sourceTree = "<group>"; };
-		D609BC2727441E8E00FA96DA /* bedroom-s2.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bedroom-s2.ahap"; sourceTree = "<group>"; };
-		D609BC2827441E8E00FA96DA /* playground-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "playground-s2.wav"; sourceTree = "<group>"; };
-		D609BC2927441E8E00FA96DA /* garden-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "garden-s1.ahap"; sourceTree = "<group>"; };
-		D609BC2A27441E8E00FA96DA /* flower.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flower.ahap; sourceTree = "<group>"; };
-		D609BC2B27441E8E00FA96DA /* bedroom-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bedroom-s1.wav"; sourceTree = "<group>"; };
-		D609BC2C27441E8E00FA96DA /* apple-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "apple-s1.ahap"; sourceTree = "<group>"; };
-		D609BC2D27441E8E00FA96DA /* walk.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = walk.ahap; sourceTree = "<group>"; };
-		D609BC2E27441E8E00FA96DA /* kiwi-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "kiwi-s2.wav"; sourceTree = "<group>"; };
-		D609BC2F27441E8E00FA96DA /* garden-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "garden-s1.wav"; sourceTree = "<group>"; };
-		D609BC3027441E8E00FA96DA /* wall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wall.wav; sourceTree = "<group>"; };
-		D609BC3127441E8E00FA96DA /* window-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "window-s2.wav"; sourceTree = "<group>"; };
-		D609BC3227441E8E00FA96DA /* apple.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apple.ahap; sourceTree = "<group>"; };
-		D609BC3327441E8E00FA96DA /* playground.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = playground.ahap; sourceTree = "<group>"; };
-		D609BC3427441E8E00FA96DA /* flower.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flower.wav; sourceTree = "<group>"; };
-		D609BC3527441E8E00FA96DA /* kiwi-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "kiwi-s1.wav"; sourceTree = "<group>"; };
-		D609BC3627441E8E00FA96DA /* garden-s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "garden-s2.wav"; sourceTree = "<group>"; };
-		D609BC3727441E8E00FA96DA /* spaghetti.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spaghetti.ahap; sourceTree = "<group>"; };
-		D609BC3827441E8E00FA96DA /* window-s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "window-s1.wav"; sourceTree = "<group>"; };
-		D609BC3927441E8E00FA96DA /* playground.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = playground.wav; sourceTree = "<group>"; };
-		D609BC3A27441E8E00FA96DA /* pillow-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pillow-s1.ahap"; sourceTree = "<group>"; };
-		D609BC3B27441E8E00FA96DA /* kiwi-s1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "kiwi-s1.ahap"; sourceTree = "<group>"; };
-		D609BC3C27441E8E00FA96DA /* banana-s3.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "banana-s3.ahap"; sourceTree = "<group>"; };
 		D611041C26FBD81800B40555 /* OnePiecePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePiecePuzzle.swift; sourceTree = "<group>"; };
 		D61CA51227027338003255E9 /* ThreePiecePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePiecePuzzle.swift; sourceTree = "<group>"; };
 		D61CA51427037B28003255E9 /* PuzzleViewS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewS.swift; sourceTree = "<group>"; };
@@ -285,113 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D609BBD827441E8E00FA96DA /* AHAP */ = {
-			isa = PBXGroup;
-			children = (
-				D609BBD927441E8E00FA96DA /* cookie.wav */,
-				D609BBDA27441E8E00FA96DA /* pillow-s2.ahap */,
-				D609BBDB27441E8E00FA96DA /* kiwi-s2.ahap */,
-				D609BBDC27441E8E00FA96DA /* dinner.ahap */,
-				D609BBDD27441E8E00FA96DA /* dinner.wav */,
-				D609BBDE27441E8E00FA96DA /* spaghetti-s1.wav */,
-				D609BBDF27441E8E00FA96DA /* pillow-s1.wav */,
-				D609BBE027441E8E00FA96DA /* bedroom-s1.ahap */,
-				D609BBE127441E8E00FA96DA /* window.ahap */,
-				D609BBE227441E8E00FA96DA /* garden-s2.ahap */,
-				D609BBE327441E8E00FA96DA /* eggs.wav */,
-				D609BBE427441E8E00FA96DA /* apple-s2.ahap */,
-				D609BBE527441E8E00FA96DA /* banana-s1.ahap */,
-				D609BBE627441E8E00FA96DA /* spaghetti-s2.wav */,
-				D609BBE727441E8E00FA96DA /* pillow-s2.wav */,
-				D609BBE827441E8E00FA96DA /* spaghetti-s3.wav */,
-				D609BBE927441E8E00FA96DA /* window-s1.ahap */,
-				D609BBEA27441E8E00FA96DA /* playground-s2.ahap */,
-				D609BBEB27441E8E00FA96DA /* spaghetti.wav */,
-				D609BBEC27441E8E00FA96DA /* pillow.ahap */,
-				D609BBED27441E8E00FA96DA /* flower-s2.ahap */,
-				D609BBEE27441E8E00FA96DA /* fork.ahap */,
-				D609BBEF27441E8E00FA96DA /* pillow.wav */,
-				D609BBF027441E8E00FA96DA /* duck.wav */,
-				D609BBF127441E8E00FA96DA /* spoon.wav */,
-				D609BBF227441E8E00FA96DA /* table.ahap */,
-				D609BBF327441E8E00FA96DA /* spoon.ahap */,
-				D609BBF427441E8E00FA96DA /* banana-s1.wav */,
-				D609BBF527441E8E00FA96DA /* bench.wav */,
-				D609BBF627441E8E00FA96DA /* dinner-s2.wav */,
-				D609BBF727441E8E00FA96DA /* dinner-s2.ahap */,
-				D609BBF827441E8E00FA96DA /* kiwi.ahap */,
-				D609BBF927441E8E00FA96DA /* spaghetti-s1.ahap */,
-				D609BBFA27441E8E00FA96DA /* bedroom.wav */,
-				D609BBFB27441E8E00FA96DA /* banana-s2.wav */,
-				D609BBFC27441E8E00FA96DA /* dinner-s1.wav */,
-				D609BBFD27441E8E00FA96DA /* cookie-s2.ahap */,
-				D609BBFE27441E8E00FA96DA /* banana-s3.wav */,
-				D609BBFF27441E8E00FA96DA /* table-s2.ahap */,
-				D609BC0027441E8E00FA96DA /* cookie-s1.wav */,
-				D609BC0127441E8E00FA96DA /* flower-s2.wav */,
-				D609BC0227441E8E00FA96DA /* apple-s2.wav */,
-				D609BC0327441E8E00FA96DA /* cookie-s1.ahap */,
-				D609BC0427441E8E00FA96DA /* bedroom.ahap */,
-				D609BC0527441E8E00FA96DA /* table-s1.ahap */,
-				D609BC0627441E8E00FA96DA /* banana.wav */,
-				D609BC0727441E8E00FA96DA /* bench.ahap */,
-				D609BC0827441E8E00FA96DA /* cookie-s2.wav */,
-				D609BC0927441E8E00FA96DA /* dinner-s1.ahap */,
-				D609BC0A27441E8E00FA96DA /* flower-s1.wav */,
-				D609BC0B27441E8E00FA96DA /* apple-s1.wav */,
-				D609BC0C27441E8E00FA96DA /* spaghetti-s2.ahap */,
-				D609BC0D27441E8E00FA96DA /* spaghetti-s3.ahap */,
-				D609BC0E27441E8E00FA96DA /* fish.wav */,
-				D609BC0F27441E8E00FA96DA /* fork.wav */,
-				D609BC1027441E8E00FA96DA /* table-s2.wav */,
-				D609BC1127441E8E00FA96DA /* kiwi.wav */,
-				D609BC1227441E8E00FA96DA /* window-s2.ahap */,
-				D609BC1327441E8E00FA96DA /* wall.ahap */,
-				D609BC1427441E8E00FA96DA /* playground-s1.ahap */,
-				D609BC1527441E8E00FA96DA /* fish.ahap */,
-				D609BC1627441E8E00FA96DA /* eggs.ahap */,
-				D609BC1727441E8E00FA96DA /* garden.ahap */,
-				D609BC1827441E8E00FA96DA /* table-s1.wav */,
-				D609BC1927441E8E00FA96DA /* flower-s1.ahap */,
-				D609BC1A27441E8E00FA96DA /* table.wav */,
-				D609BC1B27441E8E00FA96DA /* banana-s2.ahap */,
-				D609BC1C27441E8E00FA96DA /* window.wav */,
-				D609BC1D27441E8E00FA96DA /* walk.wav */,
-				D609BC1E27441E8E00FA96DA /* duck.ahap */,
-				D609BC1F27441E8E00FA96DA /* playground-s1.wav */,
-				D609BC2027441E8E00FA96DA /* bedroom-s2.wav */,
-				D609BC2127441E8E00FA96DA /* garden.wav */,
-				D609BC2227441E8E00FA96DA /* apple.wav */,
-				D609BC2327441E8E00FA96DA /* grass.ahap */,
-				D609BC2427441E8E00FA96DA /* grass.wav */,
-				D609BC2527441E8E00FA96DA /* cookie.ahap */,
-				D609BC2627441E8E00FA96DA /* banana.ahap */,
-				D609BC2727441E8E00FA96DA /* bedroom-s2.ahap */,
-				D609BC2827441E8E00FA96DA /* playground-s2.wav */,
-				D609BC2927441E8E00FA96DA /* garden-s1.ahap */,
-				D609BC2A27441E8E00FA96DA /* flower.ahap */,
-				D609BC2B27441E8E00FA96DA /* bedroom-s1.wav */,
-				D609BC2C27441E8E00FA96DA /* apple-s1.ahap */,
-				D609BC2D27441E8E00FA96DA /* walk.ahap */,
-				D609BC2E27441E8E00FA96DA /* kiwi-s2.wav */,
-				D609BC2F27441E8E00FA96DA /* garden-s1.wav */,
-				D609BC3027441E8E00FA96DA /* wall.wav */,
-				D609BC3127441E8E00FA96DA /* window-s2.wav */,
-				D609BC3227441E8E00FA96DA /* apple.ahap */,
-				D609BC3327441E8E00FA96DA /* playground.ahap */,
-				D609BC3427441E8E00FA96DA /* flower.wav */,
-				D609BC3527441E8E00FA96DA /* kiwi-s1.wav */,
-				D609BC3627441E8E00FA96DA /* garden-s2.wav */,
-				D609BC3727441E8E00FA96DA /* spaghetti.ahap */,
-				D609BC3827441E8E00FA96DA /* window-s1.wav */,
-				D609BC3927441E8E00FA96DA /* playground.wav */,
-				D609BC3A27441E8E00FA96DA /* pillow-s1.ahap */,
-				D609BC3B27441E8E00FA96DA /* kiwi-s1.ahap */,
-				D609BC3C27441E8E00FA96DA /* banana-s3.ahap */,
-			);
-			path = AHAP;
-			sourceTree = "<group>";
-		};
 		D611041B26FBD7CA00B40555 /* Puzzle */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,7 +136,6 @@
 				D6603CAA26EA6696005AB1E5 /* Utilities */,
 				D6603CA926EA667A005AB1E5 /* Screens */,
 				D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */,
-				D609BBD827441E8E00FA96DA /* AHAP */,
 				D6B538C127451FC800061D63 /* AHAP */,
 				D6603CA326EA60DC005AB1E5 /* Info.plist */,
 				D6603CA026EA60DC005AB1E5 /* Preview Content */,
@@ -600,109 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D609BC7027441E8E00FA96DA /* spaghetti-s2.ahap in Resources */,
-				D609BC7E27441E8E00FA96DA /* table.wav in Resources */,
-				D609BC6B27441E8E00FA96DA /* bench.ahap in Resources */,
-				D609BC4F27441E8E00FA96DA /* spaghetti.wav in Resources */,
-				D609BC8A27441E8E00FA96DA /* banana.ahap in Resources */,
 				D6603CA226EA60DC005AB1E5 /* Preview Assets.xcassets in Resources */,
-				D609BC4927441E8E00FA96DA /* banana-s1.ahap in Resources */,
-				D609BC5C27441E8E00FA96DA /* kiwi.ahap in Resources */,
-				D609BC7227441E8E00FA96DA /* fish.wav in Resources */,
-				D609BC8427441E8E00FA96DA /* bedroom-s2.wav in Resources */,
-				D609BC5D27441E8E00FA96DA /* spaghetti-s1.ahap in Resources */,
-				D609BC7827441E8E00FA96DA /* playground-s1.ahap in Resources */,
-				D609BC9D27441E8E00FA96DA /* playground.wav in Resources */,
-				D609BC7727441E8E00FA96DA /* wall.ahap in Resources */,
-				D609BC6527441E8E00FA96DA /* flower-s2.wav in Resources */,
-				D609BC5227441E8E00FA96DA /* fork.ahap in Resources */,
-				D609BC7927441E8E00FA96DA /* fish.ahap in Resources */,
-				D609BC4527441E8E00FA96DA /* window.ahap in Resources */,
-				D609BC9E27441E8E00FA96DA /* pillow-s1.ahap in Resources */,
-				D609BC4327441E8E00FA96DA /* pillow-s1.wav in Resources */,
-				D609BC8227441E8E00FA96DA /* duck.ahap in Resources */,
-				D609BC4127441E8E00FA96DA /* dinner.wav in Resources */,
-				D609BC4027441E8E00FA96DA /* dinner.ahap in Resources */,
-				D609BC7427441E8E00FA96DA /* table-s2.wav in Resources */,
-				D609BC8827441E8E00FA96DA /* grass.wav in Resources */,
-				D609BC8127441E8E00FA96DA /* walk.wav in Resources */,
 				D6603C9F26EA60DC005AB1E5 /* Assets.xcassets in Resources */,
-				D609BC7C27441E8E00FA96DA /* table-s1.wav in Resources */,
-				D609BC7127441E8E00FA96DA /* spaghetti-s3.ahap in Resources */,
-				D609BC8027441E8E00FA96DA /* window.wav in Resources */,
-				D609BC9627441E8E00FA96DA /* apple.ahap in Resources */,
-				D609BC9927441E8E00FA96DA /* kiwi-s1.wav in Resources */,
-				D609BC6627441E8E00FA96DA /* apple-s2.wav in Resources */,
-				D609BC5B27441E8E00FA96DA /* dinner-s2.ahap in Resources */,
-				D609BC8F27441E8E00FA96DA /* bedroom-s1.wav in Resources */,
-				D609BC8E27441E8E00FA96DA /* flower.ahap in Resources */,
-				D609BC4D27441E8E00FA96DA /* window-s1.ahap in Resources */,
-				D609BC9527441E8E00FA96DA /* window-s2.wav in Resources */,
-				D609BC6727441E8E00FA96DA /* cookie-s1.ahap in Resources */,
-				D609BC4A27441E8E00FA96DA /* spaghetti-s2.wav in Resources */,
-				D609BC3F27441E8E00FA96DA /* kiwi-s2.ahap in Resources */,
-				D609BC5F27441E8E00FA96DA /* banana-s2.wav in Resources */,
-				D609BC8D27441E8E00FA96DA /* garden-s1.ahap in Resources */,
-				D609BC6D27441E8E00FA96DA /* dinner-s1.ahap in Resources */,
-				D609BC9827441E8E00FA96DA /* flower.wav in Resources */,
-				D609BC4827441E8E00FA96DA /* apple-s2.ahap in Resources */,
-				D609BC9A27441E8E00FA96DA /* garden-s2.wav in Resources */,
-				D609BC8627441E8E00FA96DA /* apple.wav in Resources */,
-				D609BCA027441E8E00FA96DA /* banana-s3.ahap in Resources */,
-				D609BC6827441E8E00FA96DA /* bedroom.ahap in Resources */,
-				D609BC6F27441E8E00FA96DA /* apple-s1.wav in Resources */,
-				D609BC5027441E8E00FA96DA /* pillow.ahap in Resources */,
-				D609BC5327441E8E00FA96DA /* pillow.wav in Resources */,
-				D609BC5827441E8E00FA96DA /* banana-s1.wav in Resources */,
-				D609BC9F27441E8E00FA96DA /* kiwi-s1.ahap in Resources */,
-				D609BC6927441E8E00FA96DA /* table-s1.ahap in Resources */,
 				D6B538C227451FC800061D63 /* AHAP in Resources */,
-				D609BC7627441E8E00FA96DA /* window-s2.ahap in Resources */,
-				D609BC8B27441E8E00FA96DA /* bedroom-s2.ahap in Resources */,
-				D609BC9327441E8E00FA96DA /* garden-s1.wav in Resources */,
-				D609BC5127441E8E00FA96DA /* flower-s2.ahap in Resources */,
-				D609BC6227441E8E00FA96DA /* banana-s3.wav in Resources */,
-				D609BC8927441E8E00FA96DA /* cookie.ahap in Resources */,
-				D609BC6E27441E8E00FA96DA /* flower-s1.wav in Resources */,
-				D609BC9227441E8E00FA96DA /* kiwi-s2.wav in Resources */,
-				D609BC4C27441E8E00FA96DA /* spaghetti-s3.wav in Resources */,
-				D609BC9027441E8E00FA96DA /* apple-s1.ahap in Resources */,
-				D609BC9C27441E8E00FA96DA /* window-s1.wav in Resources */,
-				D609BC6027441E8E00FA96DA /* dinner-s1.wav in Resources */,
-				D609BC4B27441E8E00FA96DA /* pillow-s2.wav in Resources */,
-				D609BC5627441E8E00FA96DA /* table.ahap in Resources */,
-				D609BC9427441E8E00FA96DA /* wall.wav in Resources */,
-				D609BC5927441E8E00FA96DA /* bench.wav in Resources */,
-				D609BC6C27441E8E00FA96DA /* cookie-s2.wav in Resources */,
-				D609BC7F27441E8E00FA96DA /* banana-s2.ahap in Resources */,
-				D609BC4E27441E8E00FA96DA /* playground-s2.ahap in Resources */,
-				D609BC9B27441E8E00FA96DA /* spaghetti.ahap in Resources */,
-				D609BC7527441E8E00FA96DA /* kiwi.wav in Resources */,
-				D609BC9727441E8E00FA96DA /* playground.ahap in Resources */,
-				D609BC5727441E8E00FA96DA /* spoon.ahap in Resources */,
-				D609BC8C27441E8E00FA96DA /* playground-s2.wav in Resources */,
-				D609BC6127441E8E00FA96DA /* cookie-s2.ahap in Resources */,
-				D609BC7D27441E8E00FA96DA /* flower-s1.ahap in Resources */,
-				D609BC5527441E8E00FA96DA /* spoon.wav in Resources */,
-				D609BC4727441E8E00FA96DA /* eggs.wav in Resources */,
-				D609BC6427441E8E00FA96DA /* cookie-s1.wav in Resources */,
-				D609BC3D27441E8E00FA96DA /* cookie.wav in Resources */,
-				D609BC6A27441E8E00FA96DA /* banana.wav in Resources */,
-				D609BC8527441E8E00FA96DA /* garden.wav in Resources */,
-				D609BC7327441E8E00FA96DA /* fork.wav in Resources */,
-				D609BC7A27441E8E00FA96DA /* eggs.ahap in Resources */,
-				D609BC4227441E8E00FA96DA /* spaghetti-s1.wav in Resources */,
-				D609BC5A27441E8E00FA96DA /* dinner-s2.wav in Resources */,
-				D609BC5E27441E8E00FA96DA /* bedroom.wav in Resources */,
-				D609BC6327441E8E00FA96DA /* table-s2.ahap in Resources */,
-				D609BC8727441E8E00FA96DA /* grass.ahap in Resources */,
-				D609BC7B27441E8E00FA96DA /* garden.ahap in Resources */,
-				D609BC4627441E8E00FA96DA /* garden-s2.ahap in Resources */,
-				D609BC8327441E8E00FA96DA /* playground-s1.wav in Resources */,
-				D609BC9127441E8E00FA96DA /* walk.ahap in Resources */,
-				D609BC4427441E8E00FA96DA /* bedroom-s1.ahap in Resources */,
-				D609BC3E27441E8E00FA96DA /* pillow-s2.ahap in Resources */,
-				D609BC5427441E8E00FA96DA /* duck.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 14;
-				DEVELOPMENT_ASSET_PATHS = "NewSermo/AHAP NewSermo/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "NewSermo/Preview\\ Content";
 				DEVELOPMENT_TEAM = U68AWG975G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewSermo/Info.plist;
@@ -892,7 +484,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 14;
-				DEVELOPMENT_ASSET_PATHS = "NewSermo/AHAP NewSermo/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "NewSermo/Preview\\ Content";
 				DEVELOPMENT_TEAM = U68AWG975G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewSermo/Info.plist;

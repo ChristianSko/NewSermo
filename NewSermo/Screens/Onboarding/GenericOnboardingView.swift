@@ -10,6 +10,7 @@ import SwiftUI
 struct GenericOnboardingView: View {
     
     let imageName: String
+	@State var wordButtonAnimation = false
     
     var body: some View {
         ZStack{
@@ -31,8 +32,17 @@ struct GenericOnboardingView: View {
                     print("Move next screen goes here")
 
                 }, label: {
-                    Image("banana-button")
-                        .padding(20)
+					ZStack {
+						Color
+							.white
+							.frame(width: 250, height: 60)
+							.cornerRadius(10)
+						
+						WordButton(word: "banana",
+								   color: .blue,
+								   press: wordButtonAnimation)
+							.padding(30)
+					}
 
                 })
                 .offset(x: 140, y: -40)

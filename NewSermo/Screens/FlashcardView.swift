@@ -36,37 +36,11 @@ struct FlashcardView: View {
                     .frame(width: 150)
                 
                 VStack(alignment: .center, spacing: 50){
-        
-//					WordButton(word: flashcard.name.uppercased(),
-//                               color: color,
-//                               press: wordButtonAnimation) {
-//
-//                    }
-//					
-					
-					Button(action: {print("ok")}) {
-						Text(flashcard.name)
-							.font(.title)
-							.frame(width: 240, height: 50)
-							.foregroundColor(.white)
-							.background(color)
-							.clipShape(Capsule())
-							.shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
-							.scaleEffect(press ? 1.5 : 1)
-							.animation(.spring())
-							.onAppear(perform: prepareHaptics)
-							.onTapGesture {
-								HapticEngine.shared.playHapticsFile(name: "AHAP/walk")
-							}
-							.gesture(
-								LongPressGesture().updating($press) { currenState, gestureState, transaction in
-									gestureState = currenState
 
-								}
-							)
-					}
-					
-                    
+					WordButton(word: flashcard.name,
+                               color: color,
+                               press: wordButtonAnimation) 
+
                     HStack(spacing: 70){
                         
 						NavigationLink(destination: FindAndMatchView(flashcard: flashcard,
@@ -88,45 +62,8 @@ struct FlashcardView: View {
             .cornerRadius(10)
             .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
         }
-		.accentColor(color)
-
-    }
-    
-    
-    func prepareHaptics() {
-        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-
-        do {
-            self.engine = try CHHapticEngine()
-            try engine?.start()
-        } catch {
-            print("There was an error creating the engine: \(error.localizedDescription)")
-        }
-    }
-    
-    
-    func complexSuccess() {
-        // make sure that the device supports haptics
-        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-        var events = [CHHapticEvent]()
-
-        // create one intense, sharp tap
-        let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 1)
-        let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 1)
-        let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 0)
-        events.append(event)
-
-        // convert those events into a pattern and play it immediately
-        do {
-            let pattern = try CHHapticPattern(events: events, parameters: [])
-            let player = try engine?.makePlayer(with: pattern)
-            try player?.start(atTime: 0)
-        } catch {
-            print("Failed to play pattern: \(error.localizedDescription).")
-        }
     }
 
-    
 }
 
 struct Fashcard_Previews: PreviewProvider {

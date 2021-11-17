@@ -11,13 +11,13 @@ struct WordButton: View {
     
     let word: String
     let color: Color
+
     @GestureState var press = false
-    let action: (() -> Void)
     
     var body: some View {
         
-        Button(action: action) {
-            Text(word)
+        Button(action: {print("OK")}) {
+			Text(word.uppercased())
                 .font(.title)
                 .frame(width: 240, height: 50)
                 .foregroundColor(.white)
@@ -26,9 +26,11 @@ struct WordButton: View {
                 .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 1)
                 .scaleEffect(press ? 1.5 : 1)
                 .animation(.spring())
+				.onAppear(perform: HapticEngine.shared.createEngine)
                 .gesture(
                     LongPressGesture().updating($press) { currenState, gestureState, transaction in
                         gestureState = currenState
+						HapticEngine.shared.playHapticsFile(name: "AHAP/\(word)")
                     }
                 )
         }
@@ -37,7 +39,7 @@ struct WordButton: View {
 
 struct WordButton_Previews: PreviewProvider {
     static var previews: some View {
-        WordButton(word: "Apple", color: .blue, action: {print("action")})
+        WordButton(word: "apple", color: .blue)
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

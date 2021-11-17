@@ -25,7 +25,7 @@ class HapticEngine: ObservableObject {
 
 	
 	// MARK: - CreteEngine for Haptics
-	func creteEngine() {
+	func createEngine() {
 		if !supportsHaptics {
 			return
 		} else {
@@ -84,7 +84,6 @@ class HapticEngine: ObservableObject {
 			return
 		}
 	
-		
 		do {
 			// Start the engine in case it's idle.
 			try engine.start()

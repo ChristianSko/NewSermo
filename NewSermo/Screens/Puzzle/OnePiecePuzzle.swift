@@ -36,8 +36,9 @@ struct OnePiecePuzzle: View {
 								.scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
 								.offset(x: leftPuzzleAnimation ? 310 : 0 ,
 										y: leftPuzzleAnimation ? -110 : -60)
-							
+								.onAppear(perform: HapticEngine.shared.createEngine)
 								.onTapGesture {
+									HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)")
 									withAnimation(.linear(duration: 0.2)) {
 										leftPuzzleAnimation.toggle()
 										if leftPuzzleAnimation {

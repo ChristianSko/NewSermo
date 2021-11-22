@@ -18,6 +18,7 @@ struct ThreePiecePuzzle: View {
     @State var bottomleadingPuzzleAnimation = false
     @State var showStars = false
 	@State var showInfo = false
+	@State var animationCounter = 0
     
     var body: some View {
 		ZStack {
@@ -43,14 +44,24 @@ struct ThreePiecePuzzle: View {
 										.scaleEffect(topLeadingPuzzleAnimation ? 2 : 1)
 										.offset(x: topLeadingPuzzleAnimation ? 260 : 0 ,
 												y: topLeadingPuzzleAnimation ? 29 : 0)
+										.onAppear(perform: HapticEngine.shared.createEngine)
 										.onTapGesture {
 											withAnimation(.linear(duration: 0.2)) {
 												topLeadingPuzzleAnimation.toggle()
+												animationCounter += 1
 												if trailingPuzzleAnimation && bottomleadingPuzzleAnimation && topLeadingPuzzleAnimation {
 													withAnimation(.easeIn(duration: 0.5)) {
 														showStars.toggle()
 													}
 												}
+											}
+											
+											if animationCounter == 1 {
+												HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s1")
+											} else if animationCounter == 2 {
+												HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s2")
+											} else {
+												HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s3")
 											}
 										}
 									
@@ -66,6 +77,7 @@ struct ThreePiecePuzzle: View {
 												y: bottomleadingPuzzleAnimation ? -130 : -65)
 									
 										.onTapGesture {
+											animationCounter += 1
 											withAnimation(.linear(duration: 0.2)) {
 												bottomleadingPuzzleAnimation.toggle()
 												if topLeadingPuzzleAnimation && bottomleadingPuzzleAnimation && topLeadingPuzzleAnimation {
@@ -73,6 +85,13 @@ struct ThreePiecePuzzle: View {
 														showStars.toggle()
 													}
 												}
+											}
+											if animationCounter == 1 {
+												HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s1")
+											} else if animationCounter == 2 {
+												HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s2")
+											} else {
+												HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s3")
 											}
 										}
 									
@@ -99,6 +118,7 @@ struct ThreePiecePuzzle: View {
 											y: trailingPuzzleAnimation ? 0 : 0)
 								
 									.onTapGesture {
+										animationCounter += 1
 										withAnimation(.linear(duration: 0.2)) {
 											trailingPuzzleAnimation.toggle()
 											if topLeadingPuzzleAnimation && bottomleadingPuzzleAnimation && topLeadingPuzzleAnimation {
@@ -106,6 +126,13 @@ struct ThreePiecePuzzle: View {
 													showStars.toggle()
 												}
 											}
+										}
+										if animationCounter == 1 {
+											HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s1")
+										} else if animationCounter == 2 {
+											HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s2")
+										} else {
+											HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s3")
 										}
 									}
 							}
@@ -142,6 +169,7 @@ struct ThreePiecePuzzle: View {
 					trailingPuzzleAnimation = false
 					topLeadingPuzzleAnimation = false
 					showStars = false
+					animationCounter = 0
 				})
 			}
 			

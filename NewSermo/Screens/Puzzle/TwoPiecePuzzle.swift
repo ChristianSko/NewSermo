@@ -39,6 +39,7 @@ struct TwoPiecePuzzle: View {
 												  maskImageName: "puzzle-2pc-1")
 									.scaleEffect(leftPuzzleAnimation ? 1.5 : 1)
 									.offset(x: leftPuzzleAnimation ? 280 : 0)
+									.onAppear(perform: HapticEngine.shared.createEngine)
 									.onTapGesture {
 										withAnimation {
 											leftPuzzleAnimation.toggle()
@@ -47,6 +48,11 @@ struct TwoPiecePuzzle: View {
 													showStars.toggle()
 												}
 											}
+										}
+										if rightPuzzleAnimation{
+											HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s2")
+										} else {
+											HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s1")
 										}
 									}
 								
@@ -74,6 +80,11 @@ struct TwoPiecePuzzle: View {
 													showStars.toggle()
 												}
 											}
+										}
+										if leftPuzzleAnimation{
+											HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s2")
+										} else {
+											HapticEngine.shared.playHapticsFile(name: "AHAP/\(flashcard.name)-s1")
 										}
 									}
 							}

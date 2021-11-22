@@ -11,7 +11,7 @@ import SwiftUI
 struct SermoAvenue: App {
     
     // TODO: - Set Up with UserDefaults once app is finished
-    @State var userPassedOnboarding = false
+	@AppStorage("userPassedOnboarding") var userPassedOnboarding: Bool = false
     
     var body: some Scene {
         WindowGroup {

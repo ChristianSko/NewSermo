@@ -29,8 +29,8 @@
 		D67E60F826F7E7D600A7AC40 /* WordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E60F726F7E7D600A7AC40 /* WordButton.swift */; };
 		D67E615F26F8BF9500A7AC40 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E615E26F8BF9500A7AC40 /* Category.swift */; };
 		D67E616426F8F4B800A7AC40 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E616326F8F4B800A7AC40 /* ImagePicker.swift */; };
+		D683D82A275E436800572541 /* AHAP in Resources */ = {isa = PBXBuildFile; fileRef = D683D829275E436800572541 /* AHAP */; };
 		D695FFAE26ED602B005BCBD7 /* Navigationbar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */; };
-		D6B538C227451FC800061D63 /* AHAP in Resources */ = {isa = PBXBuildFile; fileRef = D6B538C127451FC800061D63 /* AHAP */; };
 		D6D78EDB2705150800EFF048 /* MaskedPuzzleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D78EDA2705150800EFF048 /* MaskedPuzzleImage.swift */; };
 		D6D8690A273D7CBD008C6082 /* HapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D86909273D7CBD008C6082 /* HapticEngine.swift */; };
 		D6E176E926EF967B00B87BE1 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E176E826EF967B00B87BE1 /* FlashcardView.swift */; };
@@ -64,8 +64,8 @@
 		D67E60F726F7E7D600A7AC40 /* WordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordButton.swift; sourceTree = "<group>"; };
 		D67E615E26F8BF9500A7AC40 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D67E616326F8F4B800A7AC40 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		D683D829275E436800572541 /* AHAP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AHAP; sourceTree = "<group>"; };
 		D695FFAD26ED602B005BCBD7 /* Navigationbar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigationbar+Ext.swift"; sourceTree = "<group>"; };
-		D6B538C127451FC800061D63 /* AHAP */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AHAP; path = "../../../../Desktop/carpeta sin título 2/AHAP"; sourceTree = "<group>"; };
 		D6D78EDA2705150800EFF048 /* MaskedPuzzleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedPuzzleImage.swift; sourceTree = "<group>"; };
 		D6D86909273D7CBD008C6082 /* HapticEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEngine.swift; sourceTree = "<group>"; };
 		D6E176E826EF967B00B87BE1 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 				D6603CAA26EA6696005AB1E5 /* Utilities */,
 				D6603CA926EA667A005AB1E5 /* Screens */,
 				D6603C9E26EA60DC005AB1E5 /* Assets.xcassets */,
-				D6B538C127451FC800061D63 /* AHAP */,
+				D683D829275E436800572541 /* AHAP */,
 				D6603CA326EA60DC005AB1E5 /* Info.plist */,
 				D6603CA026EA60DC005AB1E5 /* Preview Content */,
 			);
@@ -294,7 +294,7 @@
 			files = (
 				D6603CA226EA60DC005AB1E5 /* Preview Assets.xcassets in Resources */,
 				D6603C9F26EA60DC005AB1E5 /* Assets.xcassets in Resources */,
-				D6B538C227451FC800061D63 /* AHAP in Resources */,
+				D683D82A275E436800572541 /* AHAP in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
